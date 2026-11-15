@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f6f4ec">
+<meta name="description" content="北陸日和｜2026年11月17日至21日金澤、白川鄉與北陸的五日旅行互動網站。含每日行程、週行事曆、地圖及待決定方案。">
+<title>北陸日和 · HOKURIKU JOURNAL｜2026</title>
+<style>
+:root{color-scheme:light;--bg:#f6f4ec;--paper:#fffefa;--ink:#273b3b;--muted:#6d7e7d;--dark:#244b4a;--teal:#437976;--line:#dedfd6;--gold:#b48a60;--orange:#b97157;--blue:#e0edfa;--blueink:#29577b;--green:#e1eee5;--greenink:#315e47;--cream:#fff0da;--creamink:#815d28;--lav:#f1e7f5;--lavink:#714e7f;--gray:#e9eceb;--grayink:#536565;--shadow:0 14px 44px rgba(33,57,50,.065)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+button,a{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #d9a677;outline-offset:3px}a{color:inherit}.wrap{width:min(1240px,calc(100% - 48px));margin-inline:auto}
+header{height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px;border-bottom:1px solid #dfe2da}.brand{display:flex;align-items:center;gap:11px;text-decoration:none}.brand-icon{width:39px;height:39px;border:1px solid #b8c7bc;border-radius:13px;background:#fffdfa;display:grid;place-items:center}.brand-ch{font:600 22px Georgia,"Noto Serif TC","Songti TC",serif;letter-spacing:.08em;line-height:1.1}.brand-en{font-size:10px;color:var(--teal);font-weight:900;letter-spacing:.19em}.top-actions{display:flex;align-items:center;gap:9px}.tiny{font-size:12px;color:var(--muted)}.btn{border:1px solid #cad6ce;background:var(--paper);color:var(--dark);padding:9px 15px;border-radius:999px;font-size:12px;font-weight:750;white-space:nowrap;transition:background .2s,transform .2s}.btn:hover{background:#edf3ed;transform:translateY(-1px)}.btn.primary{background:var(--dark);color:#fff;border-color:var(--dark)}.btn.primary:hover{background:#356461}.btn:disabled{opacity:.4;cursor:not-allowed;transform:none}
+.hero{position:relative;min-height:255px;display:flex;margin-top:25px;overflow:hidden;border:1px solid #d3dfd5;border-radius:25px;background:linear-gradient(114deg,#e4ede5 0%,#eff0e8 48%,#efe7dd 100%)}.hero-content{position:relative;z-index:2;max-width:670px;padding:33px 37px}.eyebrow{font-size:11px;font-weight:850;color:var(--teal);letter-spacing:.19em;text-transform:uppercase;display:flex;align-items:center;gap:10px}.eyebrow:before{content:"";width:30px;height:1px;background:var(--teal)}h1,h2,h3,h4,p{margin-top:0}.hero h1{font-family:"Noto Serif TC","Songti TC",Georgia,serif;font-weight:600;letter-spacing:.07em;font-size:clamp(31px,4vw,49px);line-height:1.38;margin:11px 0 8px}.hero-sub{font-size:13px;color:#607773;max-width:475px;margin-bottom:18px}.stats{display:flex;flex-wrap:wrap;gap:7px}.stat{font-size:11px;font-weight:700;color:#37635d;padding:5px 10px;border-radius:100px;background:#ffffff9e;border:1px solid #ffffff8f}.art{position:absolute;inset:0 0 0 auto;width:57%;pointer-events:none;opacity:.97}.art svg{width:100%;height:100%}
+.notice{display:flex;gap:12px;align-items:flex-start;background:#fff9eb;border:1px solid #e7d6b9;border-radius:14px;padding:13px 16px;margin:17px 0;color:#695e49;font-size:13px}.notice b{color:#735332}.notice span:first-child{font-size:17px;line-height:1.3}
+.views{display:flex;align-items:center;justify-content:space-between;gap:15px;margin:24px 0 17px}.section-intro .kicker{font-size:11px;color:var(--teal);font-weight:900;letter-spacing:.18em}.section-intro h2{font-size:24px;font-family:"Noto Serif TC","Songti TC",serif;font-weight:600;margin:2px 0}.section-intro p{font-size:12px;color:var(--muted);margin:0}.segmented{display:flex;gap:5px;padding:5px;background:#e9ece6;border:1px solid #dfe3db;border-radius:999px}.segmented button{border:0;border-radius:99px;background:transparent;color:#62716d;font-size:12px;padding:8px 15px;font-weight:800}.segmented button.on{background:var(--paper);color:var(--dark);box-shadow:0 2px 7px #3d534c1e}.panel[hidden]{display:none!important}
+.day-tabs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px;margin-bottom:20px}.day-tab{text-align:left;border:1px solid var(--line);background:var(--paper);border-radius:15px;padding:12px 13px;color:var(--ink);min-height:99px}.day-tab:hover{border-color:#9fb9ae}.day-tab.on{background:var(--dark);color:#fff;border-color:var(--dark);box-shadow:0 8px 20px #315c5633}.day-tab .day-num{font-size:11px;letter-spacing:.12em;font-weight:900;opacity:.75}.day-tab .day-date{font-size:16px;font-weight:850;margin:5px 0 3px}.day-tab .day-label{font-size:12px;font-weight:650;opacity:.83}
+.daily-layout{display:grid;grid-template-columns:minmax(0,1fr) 282px;gap:19px;align-items:start}.day-heading{background:var(--paper);border:1px solid var(--line);padding:23px 27px;border-radius:19px;margin-bottom:12px}.day-heading h2{font-family:"Noto Serif TC","Songti TC",serif;font-size:28px;font-weight:600;margin:6px 0}.day-heading p{font-size:13px;color:#697b75;margin:0 0 13px}.chiprow{display:flex;flex-wrap:wrap;gap:6px}.chip{font-size:11px;color:#466864;background:#edf2eb;border:1px solid #e1e8de;padding:4px 9px;border-radius:99px;font-weight:650}.listhead{display:flex;justify-content:space-between;align-items:center;margin:19px 2px 10px}.listhead h3{font-size:16px;margin:0}.ghost{border:0;background:transparent;color:var(--teal);font-weight:750;font-size:12px;padding:8px}
+.timeline{padding-left:4px;position:relative}.timeline:before{content:"";position:absolute;top:25px;bottom:25px;left:78px;width:1px;background:#cfdad2}.item{display:grid;grid-template-columns:66px minmax(0,1fr);gap:20px;margin:0 0 10px;position:relative}.item:before{content:"";position:absolute;left:74px;top:22px;width:9px;height:9px;border:2px solid var(--bg);border-radius:50%;background:#9dbdb1;z-index:1}.item.food:before{background:#cd9b67}.item.transit:before{background:#9faebc}.item.booked:before{background:#417fac}.time{font-size:12px;font-variant-numeric:tabular-nums;text-align:right;padding-top:15px;color:var(--teal);font-weight:850}.time small{display:block;font-size:10px;color:#99a39c;margin-top:2px;font-weight:500}.event-card{border-radius:15px;background:var(--paper);border:1px solid var(--line);overflow:hidden}.event-card.booked{background:#f6faff;border-color:#c4dbee}.event-card summary{list-style:none;cursor:pointer;display:flex;gap:12px;align-items:center;padding:13px 14px}.event-card summary::-webkit-details-marker{display:none}.e-icon{width:35px;height:35px;flex:0 0 35px;border-radius:10px;display:grid;place-items:center;font-size:17px;background:#eff3ed}.food .e-icon{background:#f6eee3}.transit .e-icon{background:#edf1f5}.e-main{flex:1;min-width:0}.e-kicker{font-size:10px;font-weight:850;letter-spacing:.1em;color:#84938b}.e-title{font-size:14px;font-weight:800;line-height:1.4}.e-sub{font-size:12px;color:var(--muted);margin-top:3px;line-height:1.45}.chevron{font-size:16px;transform:rotate(90deg);color:#95aaa0}.event-card[open] .chevron{transform:rotate(-90deg)}.event-more{padding:11px 15px 14px 62px;border-top:1px solid #e6eae4}.event-more p{font-size:12px;color:#586f67;line-height:1.8;margin:0 0 11px}.event-links{display:flex;flex-wrap:wrap;gap:7px}.small-link{padding:6px 10px;border:1px solid #c7d6cd;border-radius:99px;color:#3c7069;font-size:11px;font-weight:800;text-decoration:none;background:#f7fbf6}.small-link:hover{background:#e9f2e8}.small-link.dull{background:#f1f1ec;color:#6a7b71}.badge{font-size:10px;font-weight:800;border-radius:99px;padding:3px 8px;white-space:nowrap}.badge.fixed{color:var(--blueink);background:var(--blue)}.badge.draft{color:var(--greenink);background:var(--green)}.badge.optional{color:var(--creamink);background:var(--cream)}.badge.open{color:var(--lavink);background:var(--lav)}.pager{display:flex;justify-content:space-between;margin:18px 0 30px;gap:10px}
+.sidebar{display:grid;gap:12px;position:sticky;top:12px}.side-card{background:var(--paper);padding:19px;border:1px solid var(--line);border-radius:17px}.side-card h3{font-size:14px;margin:0 0 10px}.side-card p{font-size:12px;color:#677d75;margin:0;line-height:1.85}.routestep{display:flex;align-items:flex-start;gap:9px;font-size:12px;color:#5f776f;padding:5px 0}.routestep:before{content:"";width:7px;height:7px;flex:0 0 7px;border:2px solid #8cb2a1;border-radius:50%;margin-top:6px}.todo{padding:0;margin:0;list-style:none}.todo li{display:flex;gap:7px;margin-bottom:9px;font-size:12px;color:#677a72;line-height:1.65}.todo li:before{content:"·";font-size:24px;color:#bd926d;line-height:.6;margin-top:7px}.hotel-title{font-weight:750;font-size:14px;color:var(--ink);margin-bottom:5px}
+.calhelp{font-size:12px;color:var(--muted);margin:0 0 12px}.legend{display:flex;flex-wrap:wrap;gap:14px;margin:3px 0 14px}.legend span{font-size:11px;color:var(--muted);display:inline-flex;align-items:center;gap:5px}.swatch{width:12px;height:12px;border-radius:3px}.calendar-scroller{border:1px solid var(--line);border-radius:18px;overflow:auto;max-height:820px;background:var(--paper);scrollbar-color:#becac2 transparent}.calendar-board{min-width:1000px}.cal-head{display:grid;grid-template-columns:65px repeat(5,minmax(0,1fr));position:sticky;top:0;z-index:9;background:#eff2ed;border-bottom:1px solid var(--line)}.cal-head>div{padding:11px 7px;text-align:center;border-right:1px solid #dfe5dc}.cal-head>div:first-child{font-size:11px;color:var(--muted);display:grid;place-items:center}.cal-head .cd{font-size:17px;font-weight:850}.cal-head .cw{font-size:12px;color:var(--teal);font-weight:700}.cal-head .ct{font-size:11px;color:var(--muted)}.cal-content{display:grid;grid-template-columns:65px repeat(5,minmax(0,1fr));height:960px}.cal-times{position:sticky;left:0;z-index:5;background:#f7f8f4;border-right:1px solid var(--line)}.cal-times .hour{position:absolute;top:0;right:10px;transform:translateY(-48%);font-size:11px;color:#82908a;font-weight:650;font-variant-numeric:tabular-nums}.cal-day{position:relative;border-right:1px solid #e1e7dd;background-image:linear-gradient(to bottom,#dce2db 1px,transparent 1px),linear-gradient(to bottom,transparent 31px,#edf0ea 31px,transparent 32px);background-size:100% 64px,100% 64px}.cal-day:last-child{border:0}.cal-event{position:absolute;left:5px;right:5px;border-radius:6px;border-left:3px solid transparent;overflow:hidden;text-align:left;padding:5px 7px;color:#284a3a;background:var(--green);z-index:2;cursor:pointer;font-size:11px;line-height:1.25;transition:filter .14s;box-shadow:0 1px 2px #26372b16}.cal-event:hover{filter:brightness(.97)}.cal-event .cal-time{font-size:10px;font-weight:650;opacity:.75;margin-bottom:3px}.cal-event .cal-title{font-size:11px;font-weight:800;overflow-wrap:anywhere}.cal-event .cal-note{font-size:10px;opacity:.7;margin-top:3px}.cal-event.small{padding:2px 5px}.cal-event.small .cal-time,.cal-event.small .cal-note{display:none}.cal-event.booked{background:var(--blue);border-color:#5d8bb3;color:var(--blueink)}.cal-event.draft{background:var(--green);border-color:#77a27d;color:var(--greenink)}.cal-event.optional{background:var(--cream);border-color:#c79a55;color:var(--creamink)}.cal-event.open{background:var(--lav);border-color:#a88cc0;color:var(--lavink)}.cal-event.transit{background:var(--gray);border-color:#98abaa;color:var(--grayink)}.cal-event.lunch{background:#fceadd;border-color:#cc987a;color:#855a3c}.cal-event.pending{background:repeating-linear-gradient(135deg,#f4eff7 0 11px,#ede6f2 11px 22px);border:1px dashed #a790b4;color:#64536f;text-align:center;display:flex;flex-direction:column;justify-content:center}.calendar-foot{color:var(--muted);font-size:11px;margin-top:9px}
+.scenario-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:12px 0 18px}.scenario{border:1px solid var(--line);border-radius:15px;background:var(--paper);padding:16px 14px;text-align:left;color:var(--ink);transition:.2s}.scenario:hover{border-color:#9db8ac}.scenario.on{border-color:#4d8176;background:#eaf3eb;box-shadow:inset 0 0 0 1px #4d8176}.scenario strong{display:block;font-size:14px;margin-bottom:5px}.scenario small{display:block;font-size:11px;line-height:1.5;color:var(--muted)}.scenario .tag{font-size:10px;color:var(--teal);font-weight:800;letter-spacing:.07em}.scenario-note{background:#fffefa;border:1px solid var(--line);padding:13px 16px;border-radius:12px;color:#677870;font-size:12px;line-height:1.8}
+.wishlist{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.wish{background:var(--paper);border:1px solid var(--line);border-radius:15px;padding:17px}.wish-top{display:flex;gap:8px;align-items:center}.wish-icon{font-size:21px}.wish h3{font-size:14px;margin:0}.wish .area{font-size:10px;color:var(--teal);font-weight:800;letter-spacing:.05em;margin:6px 0 8px}.wish p{color:var(--muted);font-size:12px;line-height:1.8;min-height:57px}.wish a{font-size:12px;font-weight:800;text-decoration:none;color:var(--teal)}.footer{margin-top:25px;border-top:1px solid var(--line);padding:22px 0 40px;display:flex;justify-content:space-between;gap:20px;color:#87918c;font-size:11px}.toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,20px);padding:11px 18px;border-radius:99px;background:#2c5150;color:#fff;font-size:12px;opacity:0;transition:.2s;z-index:20;pointer-events:none;box-shadow:0 12px 27px #213e3d35}.toast.show{opacity:1;transform:translate(-50%,0)}
+.modal-backdrop{position:fixed;inset:0;z-index:30;display:grid;place-items:center;background:#19302f7a;padding:18px}.modal-backdrop[hidden]{display:none}.modal{background:var(--paper);border-radius:18px;padding:24px;width:min(450px,100%);box-shadow:0 25px 80px #071b184b}.modal h3{font-size:21px;margin:0 0 8px}.modal p{font-size:13px;color:#60756d;line-height:1.8}.modal .modal-top{display:flex;justify-content:space-between;align-items:start;gap:12px}.modal-actions{display:flex;justify-content:flex-end;gap:9px;flex-wrap:wrap;margin-top:14px}
+@media(max-width:950px){.daily-layout{grid-template-columns:minmax(0,1fr) 230px}.hero .art{width:53%}.wishlist{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:730px){.wrap{width:min(100% - 28px,610px)}header{height:68px}.top-actions .tiny{display:none}.hero{margin-top:14px;min-height:232px}.hero-content{padding:25px 22px}.hero h1{font-size:31px;max-width:75%}.hero-sub{max-width:75%;font-size:12px}.art{width:85%!important;right:-28%;opacity:.4}.views{align-items:flex-start;flex-direction:column;gap:10px}.segmented{width:100%;justify-content:space-between}.segmented button{flex:1;padding:9px 4px}.day-tabs{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding:3px 1px 11px;margin-right:-14px}.day-tab{min-width:145px;scroll-snap-align:start}.daily-layout{grid-template-columns:1fr}.sidebar{grid-template-columns:repeat(2,minmax(0,1fr));position:static}.sidebar .side-card:first-child{grid-column:span 2}.scenario-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.wishlist{grid-template-columns:repeat(2,1fr)}.footer{display:block}.footer span{display:block;margin-bottom:7px}}
+@media(max-width:490px){.brand-ch{font-size:19px}.brand-en{font-size:9px}.top-actions .btn{padding:7px 10px;font-size:11px}.hero h1{font-size:28px}.hero .stat{font-size:10px}.notice{font-size:12px}.day-heading{padding:19px}.day-heading h2{font-size:24px}.item{grid-template-columns:53px minmax(0,1fr);gap:14px}.timeline:before{left:63px}.item:before{left:59px}.time{font-size:11px}.event-card summary{padding:11px 10px;gap:9px}.e-icon{width:31px;height:31px;flex-basis:31px;font-size:15px}.e-title{font-size:12px}.e-sub{font-size:10px}.event-more{padding:11px 12px}.sidebar{grid-template-columns:1fr}.sidebar .side-card:first-child{grid-column:auto}.wishlist{grid-template-columns:1fr}.scenario-grid{grid-template-columns:1fr 1fr}.scenario{padding:13px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+@media print{header,.top-actions,.views,.day-tabs,.sidebar,.pager,.notice,.footer,.hero .art,.calhelp,.legend,.scenario-grid,.scenario-note,#panel-calendar,#panel-places{display:none!important}.wrap{width:100%}.hero{border:0;background:transparent;min-height:auto;margin-top:0}.hero-content{padding:8px 0}.hero h1{font-size:26px}.hero-sub,.stats{display:none}.daily-layout{display:block}.day-heading{border:0;padding:6px 0}.event-card,.item{break-inside:avoid}.event-card>div{display:block!important}.event-more{display:block!important}.modal-backdrop{display:none!important}}
+
+/* V7: eastern teahouse district moved earlier; check-in after sightseeing */
+.transit-mini{padding:10px 12px;background:#eff5f1;border:1px solid #d9e7dd;border-radius:11px;margin:11px 0 9px;font-size:12px;color:#2e5d53;line-height:1.75}
+.transit-mini b{display:block;margin-bottom:3px;color:#274f48}
+.transport-tips{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:0 0 20px}
+.transport-tips>div{padding:14px 16px;background:#f3f1e7;border:1px solid var(--line);border-radius:12px;font-size:12px;line-height:1.6}
+.transport-tips b{display:block;color:var(--teal);font-size:13px;margin-bottom:4px}
+.transport-tips span{display:block;color:#647773}
+.transport-group{margin-bottom:23px}
+.transport-group h3{font-family:'Noto Serif TC','Songti TC',serif;font-size:19px;font-weight:650;margin:14px 0 8px}
+.transport-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.transport-card{border:1px solid var(--line);background:var(--paper);border-radius:15px;padding:16px 17px;min-width:0}
+.transport-card .tag{display:inline-flex;background:#e5eeeb;color:#466b62;border-radius:99px;padding:3px 9px;font-size:10px;font-weight:750;margin-bottom:9px}
+.transport-card .tag.exact{background:var(--blue);color:var(--blueink)}
+.transport-card h4{font-size:15px;margin:0 0 9px}
+.transport-endpoints{display:flex;align-items:flex-start;gap:9px;color:#314e4a;font-size:12px;font-weight:750;margin:0 0 10px;line-height:1.45}
+.transport-endpoints span{min-width:0;overflow-wrap:anywhere}
+.transport-endpoints i{font-style:normal;color:#9cacaa}
+.transport-card p{margin:6px 0;color:#62746e;font-size:12px;line-height:1.8}
+.transport-card p.important{color:#986047}
+.transport-card .tlinks{display:flex;flex-wrap:wrap;gap:7px;margin-top:13px}
+.transport-foot{font-size:12px;color:var(--muted);margin-top:16px}
+@media(max-width:900px){.transport-tips{grid-template-columns:1fr}.transport-cards{grid-template-columns:1fr}}
+@media print{#panel-transport{display:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a href="#" class="brand" aria-label="北陸日和首頁">
+    <span class="brand-icon" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M2 21 9 10l4 6 5-11 8 16" stroke="#477b73" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 24h22" stroke="#b97157" stroke-width="1.5"/></svg></span>
+    <span><span class="brand-ch">北陸日和</span><span class="brand-en" style="display:block">HOKURIKU JOURNAL</span></span>
+  </a>
+  <div class="top-actions"><span class="tiny">NOV 17—21, 2026</span><button class="btn" id="copy-btn">複製行程摘要</button></div>
+</header>
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-content">
+    <div class="eyebrow">AUTUMN JOURNEY · 2026</div>
+    <h1 id="hero-title">在山海之間，<br>慢慢走。</h1>
+    <p class="hero-sub">金澤 · 白川鄉 · 北陸<br>把時間留給值得停下來的風景，和一頓好好吃的飯。</p>
+    <div class="stats"><span class="stat">11/17—11/21</span><span class="stat">五天四夜</span><span class="stat">不自駕</span><span class="stat">金澤連住四晚</span><span class="stat">Hokuriku Area Pass</span></div>
+  </div>
+  <div class="art" aria-hidden="true">
+    <svg viewBox="0 0 650 280" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+      <defs><linearGradient id="hill" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#c7d9cf"/><stop offset="1" stop-color="#96b7a9"/></linearGradient></defs>
+      <circle cx="508" cy="63" r="31" fill="#faebca"/><path d="M0 239 80 150l45 42 89-108 80 104L388 83l90 126 65-61 107 95v50H0" fill="#c5d9d1"/>
+      <path d="m160 201 80-102 73 105 66-66 90 110 181-24v56H0v-42Z" fill="url(#hill)"/><path d="m213 85 26 34 18-18-17-3Z" fill="#eff5ed"/><path d="m387 82-19 30 20-11 15 10Z" fill="#f0f7f2"/>
+      <path d="M0 258q169-46 325-15t325-9v46H0Z" fill="#66968b"/><path d="M0 275q136-27 295-13t355-5v23H0Z" fill="#477971" opacity=".7"/>
+      <g stroke="#577b71" stroke-width="2.6" fill="#f9f5ea"><path d="m295 226 48-44 49 44v41h-97Z"/><path d="m288 225 55-60 57 60-12 5-45-49-46 49Z"/><path d="M322 265v-32h42v32Z"/></g>
+      <g fill="#a9715d"><path d="M561 230v-66" stroke="#8d695b" stroke-width="4"/><circle cx="546" cy="174" r="22"/><circle cx="577" cy="175" r="24"/><circle cx="559" cy="152" r="25"/><circle cx="540" cy="149" r="16"/></g>
+      <path d="M0 266q154-19 312-3t338-15" fill="none" stroke="#d3e3dc" stroke-width="2" opacity=".68"/>
+    </svg>
+  </div>
+</section>
+<div class="notice"><span aria-hidden="true">✳</span><div><b>行程版本 V9｜2026.11.16</b>　11/17 抵達金澤先寄行李、吃壽司、14:00 後入住休息；東茶屋街改排 11/19 上午 9:30，配合店家 10:00 左右開門。11/20 確定留在金澤：UNIQLO 感謝祭、金澤城、尾山神社、長町武家屋敷及購物。已取消 21 世紀美術館，下午保留休息空檔。白川鄉巴士、三家晚餐訂位及返台交通不變。<strong>除已訂位項目，其他時段均為規劃估計。</strong></div></div>
+<div class="views">
+  <div class="section-intro"><div class="kicker">TRAVEL PLANNER</div><h2 id="section-title">每日行程</h2><p id="section-desc">按日期查看詳細動線、交通提醒及 Google Maps 導航。</p></div>
+  <nav class="segmented" aria-label="切換檢視"><button data-view="daily" class="on" aria-pressed="true">每日行程</button><button data-view="calendar" aria-pressed="false">週行事曆</button><button data-view="places" aria-pressed="false">景點候選</button><button data-view="transport" aria-pressed="false">交通攻略</button></nav>
+</div>
+<main>
+<section id="panel-daily" class="panel">
+  <nav class="day-tabs" id="day-tabs" aria-label="日期"></nav>
+  <div class="daily-layout">
+    <div>
+      <div class="day-heading"><span id="day-date" class="eyebrow"></span><h2 id="day-title"></h2><p id="day-desc"></p><div class="chiprow" id="day-chips"></div></div>
+      <div class="listhead"><h3>當日時間表 <span class="tiny" id="day-count"></span></h3><button id="expand-all" class="ghost">全部展開</button></div>
+      <div class="timeline" id="daily-items"></div>
+      <div class="pager"><button id="prev-btn" class="btn">← 前一天</button><button id="next-btn" class="btn primary">後一天 →</button></div>
+    </div>
+    <aside class="sidebar" aria-label="旅遊備忘">
+      <section class="side-card"><h3>⌁　今日動線</h3><div id="route-list"></div></section>
+      <section class="side-card"><h3>◎　交通備忘</h3><p id="transit-note"></p></section>
+      <section class="side-card"><h3>✳　待確認</h3><ul class="todo" id="day-todo"></ul></section>
+      <section class="side-card"><h3>⌂　住宿基地</h3><div class="hotel-title">スマイルホテル金沢西口駅前</div><p>金澤站西口約步行 4 分鐘。11/17～11/21 連住四晚，官方入住時間 14:00 起。</p><div style="margin-top:12px"><a class="small-link" href="https://www.google.com/maps/search/?api=1&query=%E3%82%B9%E3%83%9E%E3%82%A4%E3%83%AB%E3%83%9B%E3%83%86%E3%83%AB%E9%87%91%E6%B2%A2%E8%A5%BF%E5%8F%A3%E9%A7%85%E5%89%8D" rel="noopener noreferrer" target="_blank">飯店導航 ↗</a></div></section>
+    </aside>
+  </div>
+</section>
+<section id="panel-calendar" class="panel" hidden>
+  <p class="calhelp">左側為日本時間，上方為 11/17～11/21。可以左右捲動；<b>點擊色塊</b>可檢視詳情與導航。</p>
+  <div class="legend"><span><i class="swatch" style="background:var(--blue)"></i>已確定／已訂</span><span><i class="swatch" style="background:var(--green)"></i>暫定景點</span><span><i class="swatch" style="background:var(--cream)"></i>購物／彈性</span><span><i class="swatch" style="background:var(--gray)"></i>交通</span><span><i class="swatch" style="background:var(--lav)"></i>待決定</span></div>
+  <div class="calendar-scroller"><div class="calendar-board"><div class="cal-head" id="calendar-head"></div><div class="cal-content" id="calendar-content"></div></div></div>
+  <p class="calendar-foot">所有橫向時段均為預留區間，藍色色塊只有明確標記的起始時間已確定；非官方交通班次及未訂位景點請勿作為訂票依據。</p>
+</section>
+<section id="panel-places" class="panel" hidden>
+  <div class="day-heading"><span class="eyebrow">KANAZAWA SLOW TRAVEL</span><h2>把時間留給金澤</h2><p>11/20 已確定全日在金澤，不再安排富山、福井或和倉溫泉。上午固定 UNIQLO 感謝祭，午後提供「城郭街區」與「雨天輕鬆」兩個版本；可依雨勢及體力選擇，切換會同步反映到每日行程與週行事曆。</p></div>
+  <h3 style="font-size:16px;margin:19px 0 5px">11/20（五）金澤觀光節奏</h3>
+  <div class="scenario-grid" id="scenario-grid"></div><div class="scenario-note" id="scenario-note"></div>
+  <div class="listhead" style="margin-top:32px"><h3>金澤購物與彈性安排</h3></div><div class="wishlist" id="wishlist"></div>
+</section>
+
+<section id="panel-transport" class="panel" hidden>
+  <div class="day-heading"><span class="eyebrow">DOOR-TO-DOOR TRANSPORT GUIDE</span><h2>每個地點，怎麼去？</h2><p>由上一站到下一站的步行、站牌、車種與轉乘說明，附 Google Maps 路線查詢及官方來源。<b>確認過的班次</b>會標示；估計步行與尚未選定的車次不會假裝是訂票資訊。</p></div>
+  <div class="transport-tips"><div><b>JR Pass</b><span>11/17～11/20 四日使用；北陸新幹線適用區間的普通車自由席可搭乘。</span></div><div><b>金澤巴士</b><span>周遊巴士東口 7 號、成人 ¥220；小松空港巴士不含在 JR Pass。</span></div><div><b>11/18 必注意</b><span>去程 08:25 新高岡④ → 10:20 白川鄉；16:00 回程 → 17:55 新高岡，不是金澤。</span></div></div>
+  <div class="transport-days" id="transport-days"></div>
+  <p class="transport-foot">所列步行、車程為規劃估值；街道施工、班次停駛及候車都可能影響時間。Google Maps 交通路線會依開啟當下動態規劃，請將日期指定為實際旅行日以核對。</p>
+</section>
+</main>
+<footer class="footer"><span>北陸日和 · HOKURIKU JOURNAL · V9 · 2026</span><span>離線可開啟 · 交通與營業資訊以現場／官網公告為準</span></footer>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="modal-backdrop" id="modal" hidden role="presentation"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal-top"><h3 id="modal-title"></h3><button class="btn" id="modal-close" aria-label="關閉">關閉</button></div><div class="tiny" id="modal-time"></div><p id="modal-desc"></p><div id="modal-flag"></div><div class="modal-actions" id="modal-actions"></div></div></div>
+<script>
+'use strict';
+const Q=s=>'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(s);
+const MAPS={airport:'小松空港 石川県 日本',kanazawa:'金沢駅 石川県 日本',forus:'金沢フォーラス 堀川新町3-1',hotel:'スマイルホテル金沢西口駅前',mori:'能登前寿司 もりもり寿し 金沢フォーラス 6F',higashi:'ひがし茶屋街 金沢',kazue:'主計町茶屋街 金沢',kairiki:'北陸海鮮 金沢おでん 海力 金沢',shintakaoka:'新高岡駅',shirakawa:'白川郷バスターミナル',minoya:'しゃぶしゃぶ みのや 金沢',omicho:'近江町市場 金沢',castle:'金沢城公園 玉泉院丸庭園',kenroku:'兼六園 金沢',kanazawaShrine:'金澤神社',ishiura:'石浦神社 金沢',hitenryu:'焼肉 飛天龍 新神田本店 石川県金沢市新神田4丁目14番15号',donki:'MEGAドン・キホーテ ラパーク金沢店 西泉4-11',glass:'富山市ガラス美術館',museumToyama:'富山県美術館',kansui:'富岩運河環水公園',ama:'雨晴海岸 女岩',eiheiji:'大本山 永平寺 福井',fukui:'福井駅 恐竜広場',soto:'和倉温泉 総湯',festival:'和倉温泉お祭り会館',footbath:'わくらポケモン足湯',oyama:'尾山神社 金沢',nagamachi:'長町武家屋敷跡'};
+const ev=(id,day,start,end,title,subtitle,kind,flag,icon,desc,place,link)=>({id,day,start,end,title,subtitle,kind,flag,icon,desc,place:MAPS[place]||place||'',link:link||''});
+const days=[
+ {
+  "date": "11 月 17 日（二）",
+  "week": "週二",
+  "short": "11/17",
+  "title": "初見金澤",
+  "heading": "抵達金澤・壽司午餐・入住休息",
+  "desc": "抵達金澤先寄放行李，前往 FORUS 6F 能登前寿司用午餐；14:00 後返回飯店入住休息。下午不再趕去東茶屋街，也不安排 FORUS 逛街。",
+  "chips": [
+   "抵達日輕鬆走",
+   "先寄行李再午餐",
+   "午後入住休息",
+   "海力 18:30 已訂"
+  ],
+  "route": [
+   "小松機場 → 金澤站西口",
+   "Smile Hotel 寄放行李",
+   "FORUS 6F 壽司午餐",
+   "14:15 飯店入住與休息",
+   "鼓門・車站附近自由活動",
+   "18:30 海力"
+  ],
+  "transit": "小松機場搭北鐵機場巴士至金澤站西口（約 40～55 分，依班次與路況）；走約 4 分到飯店寄放行李，午餐需由西口穿過站內到東口 FORUS 6F。午餐後返回飯店入住。",
+  "todo": [
+   "能登前寿司 もりもり寿し午餐未預訂，平日午餐可能候位",
+   "入住時間從 14:00 起；如果提早到，先寄放行李",
+   "18:30 海力晚餐已訂，餐廳在金澤站東口附近"
+  ]
+ },
+ {
+  "date": "11 月 18 日（三）",
+  "week": "週三",
+  "short": "11/18",
+  "title": "白川鄉",
+  "heading": "合掌村・留一整天慢慢走",
+  "desc": "08:25 新高岡出發、16:00 白川鄉回程巴士已訂。午餐及村內散步安排有緩衝，不額外塞進高山。",
+  "chips": [
+   "白川鄉",
+   "08:25 巴士已訂",
+   "16:00 回程已訂",
+   "Minoya 19:30 已訂"
+  ],
+  "route": [
+   "金澤 07:47 → 新高岡 08:01",
+   "南口④ 08:25 巴士 → 白川鄉 10:20",
+   "合掌村散步、午餐",
+   "16:00 巴士 → 新高岡 17:55",
+   "18:34 新幹線 → 金澤 18:48",
+   "19:30 Minoya"
+  ],
+  "transit": "已查得 07:47 金澤 → 08:01 新高岡，南口④ 搭 08:25 世界遺產巴士，10:20 抵達白川鄉。回程 16:00 → 17:55 新高岡，再轉新幹線 18:34 → 18:48 金澤（搭乘前仍需核對）。",
+  "todo": [
+   "建議 07:25 前到金澤站新幹線閘門",
+   "白川鄉 16:00 回程目的地為新高岡站，不是金澤",
+   "雨天需注意村內步道濕滑，並預留等候巴士時間"
+  ]
+ },
+ {
+  "date": "11 月 19 日（四）",
+  "week": "週四",
+  "short": "11/19",
+  "title": "茶屋街・庭園",
+  "heading": "東茶屋街早晨・近江町市場・兼六園",
+  "desc": "把東茶屋街改到上午 9:30 抵達：先拍老街，10:00 後逛店。接著逛主計町、近江町市場，午後到兼六園與兩座神社，傍晚從石浦神社附近搭計程車赴飛天龍。",
+  "chips": [
+   "09:30 東茶屋街",
+   "近江町市場",
+   "兼六園與兩座神社",
+   "飛天龍 18:00 已訂"
+  ],
+  "route": [
+   "09:30 東茶屋街 → 主計町",
+   "近江町市場午餐",
+   "兼六園 → 金澤神社",
+   "石浦神社 → 咖啡休息",
+   "17:10 計程車 → 飛天龍 18:00"
+  ],
+  "transit": "飯店步行到金澤站東口 7 號站牌，搭右回り RL 周遊巴士至橋場町，步行約 5 分到東茶屋街。主計町步行可達，再搭巴士或步行約 15～20 分到近江町市場。市場到兼六園可搭巴士或計程車；17:10 左右搭計程車赴飛天龍新神田本店。",
+  "todo": [
+   "東茶屋街街道全天可走，但多數店家約 10:00 開始營業",
+   "飛天龍新神田本店：石川県金沢市新神田4丁目14番15号，18:00 已訂",
+   "石浦神社酉之市尚未以官方正式公告確認，不預設祭典"
+  ]
+ },
+ {
+  "date": "11 月 20 日（五）",
+  "week": "週五",
+  "short": "11/20",
+  "title": "城下町・購物",
+  "heading": "UNIQLO 感謝祭・金澤城與城下町",
+  "desc": "11/20 全天留在金澤，不再安排 21 世紀美術館。上午在 FORUS 逛 UNIQLO 感謝祭，午後以金澤城、玉泉院丸庭園、尾山神社、長町武家屋敷為主，並保留充足休息或唐吉訶德購物時間。",
+  "chips": [
+   "10:00 UNIQLO 感謝祭",
+   "金澤城・玉泉院丸庭園",
+   "尾山神社・長町彈性",
+   "唐吉訶德可選"
+  ],
+  "route": [
+   "金澤 FORUS 4F｜UNIQLO",
+   "金澤站附近午餐",
+   "金澤城・玉泉院丸庭園",
+   "尾山神社 → 長町武家屋敷（彈性）",
+   "下午茶與休息",
+   "晚餐／唐吉訶德（彈性）"
+  ],
+  "transit": "飯店經金澤站步行 8～12 分到 FORUS。午餐後從金澤站東口 7 號站牌搭右回り周遊巴士至「兼六園下・金沢城」附近，步行進入金澤城；由玉泉院丸庭園西側前往尾山神社，再向南西步行到長町武家屋敷。唐吉訶德在西泉，需搭計程車或另查當日市區巴士。",
+  "todo": [
+   "UNIQLO 金澤 FORUS 4F 預留 10:00～12:00，感謝祭優惠與贈品以現場為準",
+   "21 世紀美術館已移除，不安排參觀或雨天備案",
+   "尾山神社與長町視雨勢與體力保留彈性",
+   "11/20 晚餐尚未訂位，唐吉訶德不是必去"
+  ]
+ },
+ {
+  "date": "11 月 21 日（六）",
+  "week": "週六",
+  "short": "11/21",
+  "title": "返台日",
+  "heading": "從容退房・返回小松機場",
+  "desc": "上午只保留退房、前往機場、安檢與候機，不安排其他金澤景點。",
+  "chips": [
+   "退房",
+   "小松機場",
+   "BR157 11:45"
+  ],
+  "route": [
+   "Smile Hotel 退房",
+   "金澤站西口 → 小松機場",
+   "BR157 11:45 起飛"
+  ],
+  "transit": "已查 11/21 北鐵機場巴士：金澤站西口③ 09:10 → 小松機場 09:55；BR157 11:45 起飛。建議 09:00 前到站候車，並核對運行公告。",
+  "todo": [
+   "09:10 金澤西口③→09:55 小松機場班次仍要搭乘當天確認",
+   "留意行李重量、退稅品與航空公司報到截止"
+  ]
+ }
+];
+const base=[
+ ev("arr",0,"10:25","11:25","抵達小松機場","BR158 抵達；入境與領行李時間為估計","transit","fixed","✈️","10:25 是預計落地時間，並非已完成通關。入境、提領行李後前往 1 號巴士站，請依現場接續班車資訊搭乘。","airport"),
+ ev("bus17",0,"11:25","12:30","機場巴士 → 金澤站西口","小松空港 1 號乘車處｜約 40～55 分","transit","draft","🚌","北鐵小松機場巴士，機場 1 號月台上車，至「金沢駅西口」下車；成人 ¥1,400。BR158 10:25 到達在 2026/10/25～11/30 官方表中標示使用其他接續車，未公布一班專屬固定發車時刻，實際上車請看現場。這段時間是估計。","kanazawa","https://www.hokutetsu.co.jp/airport-bus/"),
+ ev("bag17",0,"12:30","12:50","先到 Smile Hotel 寄放行李","西口步行約 4 分｜飯店櫃台寄放","transit","draft","🧳","金澤站西口離開，步行約 4 分至 スマイルホテル金沢西口駅前（石川県金沢市広岡3丁目2番37号）。向櫃台寄放行李，茶屋街散步後約 17:00 再回來辦理入住。飯店提供入住前行李寄放。","hotel","https://smile-hotels.com/hotels/kanazawanishiguchiekimae/"),
+ ev("mori",0,"12:55","14:05","能登前寿司 もりもり寿し","先寄放行李後才去 FORUS 6F 午餐","food","draft","🍣","從飯店往金澤站東口（兼六園口）步行，前往 FORUS 6F 的「能登前寿司 もりもり寿し」。不要走錯成同樓層的迴轉壽司分店。平日午餐約 11:00–15:00、最晚入店與點餐 14:30，無法保證不候位。","mori","https://www.forus.co.jp/kanazawa/shop/1214"),
+ ev("hotel17",0,"14:15","16:45","飯店辦理入住・充分休息","14:00 起可入住，先放好行李","rest","draft","🧳","壽司午餐後從金澤站東口回到西口，步行到 Smile Hotel，辦理入住並領回早先寄放的行李。第一天搭早班飛機，午後刻意保留約 2.5 小時休息；無須趕往茶屋街。","hotel","https://smile-hotels.com/hotels/kanazawanishiguchiekimae/"),
+ ev("station17",0,"16:45","17:50","金澤車站・鼓門自由散步","視體力決定，亦可繼續在飯店休息","spot","optional","🚉","從 Smile Hotel 步行到金澤站西口，穿越站內至東口鼓門、百番街周邊輕鬆走走；不是安排 FORUS 購物，也不用特地搭車。若累了就留在飯店。","kanazawa"),
+ ev("rest17",0,"18:05","18:25","步行前往海力晚餐","飯店西口 → 金澤站東口堀川町","transit","draft","🚶","從 Smile Hotel 走回金澤站西口、穿過站內至東口，沿堀川町步行至海力。估計 12～15 分鐘；請於 18:25 前抵達。","kairiki"),
+ ev("kairiki",0,"18:30","19:55","北陸海鮮 金沢おでん 海力","18:30 已訂位｜堀川町4-22","food","fixed","🍢","已訂 18:30。地址：石川県金沢市堀川町4-22；金澤站東口（兼六園口）步行約 5 分。從飯店西口過站內通道，保守預留約 12～15 分。","kairiki","https://kanazawakairiki3.owst.jp/map"),
+ ev("depart18",1,"07:15","07:45","步行到金澤站・準備搭新幹線","建議 07:25 前進入車站","transit","draft","🚉","從 Smile Hotel 步行約 4 分到金澤站西口。前往北陸新幹線閘門，使用已兌換的 Hokuriku Area Pass，留 10～15 分看月台與自由席標示。以 07:47 列車為目標。","kanazawa"),
+ ev("shin",1,"07:47","08:01","JR 新幹線：金澤 → 新高岡","建議 07:47 つるぎ62 → 08:01","transit","draft","🚄","07:47 金澤發的北陸新幹線 つるぎ62號，08:01 抵達新高岡（依公開列車時刻）。建議 07:25 前到金澤站新幹線閘門；持 Hokuriku Area Pass 搭自由席，不用另買指定席。新高岡出站後往「南口」巴士總站 4 號站牌，08:25 巴士前建議至少提早 10 分到站。","shintakaoka","https://timetable.jr-odekake.net/line-timetable/2831"),
+ ev("bus18go",1,"08:25","10:20","世界遺產巴士 → 白川鄉","08:25 已訂｜10:20 官網表定抵達","transit","fixed","🚌","加越能世界遺產巴士：新高岡站南口 ④ 乘車處 08:25 出發，白川鄉巴士總站 10:20 到達。出示已訂位乘車資料。巴士沿途經城端、五箇山，時間比直達高速巴士久，不能把到達時間誤當 09:45。","shirakawa","https://www.kaetsunou.co.jp/company/sekaiisan/"),
+ ev("shir1",1,"10:30","12:00","白川鄉合掌村散步","由白川鄉巴士總站徒步進入聚落","spot","draft","🏘️","10:20 到站後步行約 5～10 分進入荻町。展望台在較高處，當天雨勢及接駁車狀況會決定是否上去。","shirakawa"),
+ ev("shirfood",1,"12:00","13:00","白川鄉午餐","蕎麥麵、鄉土料理｜待選","food","open","🍜","午餐尚未選定。六人同行需預留候位，雨天可優先找室內座位。","shirakawa"),
+ ev("shir2",1,"13:00","15:40","白川鄉自由散策","民家園、紀念品與休息","spot","draft","🍁","下午留給拍照、商店及感興趣的景點。建議 15:40 左右回到巴士站附近，準備 16:00 回程。","shirakawa"),
+ ev("bus18back",1,"16:00","17:55","白川鄉 → 新高岡站","16:00 已訂｜17:55 官網表定抵達","transit","fixed","🚌","已訂 16:00 白川鄉出發的世界遺產巴士，按加越能官方表 17:55 抵達「新高岡站」，不是直接開回金澤。建議 15:45 前到白川鄉巴士總站。後面須另轉乘新幹線。","shintakaoka","https://www.kaetsunou.co.jp/company/sekaiisan/"),
+ ev("shinback18",1,"18:34","18:48","新幹線：新高岡 → 金澤","建議 18:34 → 18:48（再確認）","transit","draft","🚄","17:55 巴士抵達新高岡後，到新幹線進站閘門；建議選 18:34 發、18:48 抵達金澤的班次，保留約 39 分轉乘。當天請依顯示屏選擇有自由席且停金澤的列車，持 Hokuriku Area Pass。","kanazawa","https://timetable.jr-odekake.net/line-timetable/2829"),
+ ev("rest18",1,"18:48","19:20","抵達金澤站・步行至 Minoya","晚餐前簡單整理，原則上不回飯店","rest","draft","☕","建議新高岡 18:34 → 金澤 18:48 的新幹線班次（以乘車當日公告再核對）。到站後直接走東口，步行到 Minoya 約 3 分（另加站內移動）。不要排回飯店再休息，以免趕不上 19:30 訂位。","minoya"),
+ ev("minoya",1,"19:30","21:00","Shabu-shabu Minoya","19:30 已訂位｜此花町8-3 2F","food","fixed","🥘","店址：石川県金沢市此花町8-3（2F），從金澤站東口鼓門步行約 3 分鐘。白川鄉回程由新高岡轉新幹線抵達後可直接前往。","minoya","https://shabushabu-minoya.com/"),
+ ev("tea19transit",2,"09:00","09:30","飯店 → 東茶屋街","金澤站東口⑦周遊巴士 RL → 橋場町","transit","draft","🚌","從飯店步行至金澤站東口 7 號乘車處，搭城下まち金沢周遊バス右回り（RL），在橋場町（ひがし・主計町茶屋街）下車，步行約 5 分抵東茶屋街。周遊巴士約 15 分一班，含候車約 25～35 分。","higashi","https://www.hokutetsu.co.jp/tourism-bus/castle-town"),
+ ev("higashi",2,"09:30","11:10","東茶屋街｜早晨慢慢逛","09:30 拍照、10:00 後茶屋與選物店","spot","draft","🏮","上午 9:30 先在相對清幽的街道拍照。許多商店約 10:00 開門（懷華樓官方 10:00～17:00），再慢慢逛茶屋、金箔選物與甜點。安排 1 小時 40 分，不需要急著走。","higashi","https://visitkanazawa.jp/tw/getting-around-kanazawa"),
+ ev("kazue",2,"11:10","11:35","主計町茶屋街・淺野川","從東茶屋街步行約 5～10 分","spot","draft","🌉","東茶屋街沿淺野川步行至主計町，看看河畔老街、石階與橋景。這個散步區域很近，不用搭車。","kazue"),
+ ev("kazue_market",2,"11:35","12:00","主計町 → 近江町市場","步行約 15～20 分，或在橋場町搭公車","transit","draft","🚶","主計町往近江町市場沿市區道路步行約 15～20 分；如果雨大或腳累，可往橋場町搭往金澤站方向公車，於「武蔵ヶ辻・近江町市場」下車，再步行數分鐘。","omicho"),
+ ev("market19",2,"12:00","13:10","近江町市場","逛市場＋午餐，不另外安排午餐站","spot","draft","🦀","在近江町市場吃午餐、逛海鮮攤與水果店，約一個小時。已安排午餐在市場內，因此不需第二段午餐。各家攤商營業時間不同，午間可能候位。","omicho","https://visitkanazawa.jp/tw/getting-around-kanazawa"),
+ ev("market_garden19",2,"13:10","13:35","市場 → 兼六園","搭右回り周遊巴士，或短程計程車","transit","draft","🚌","在武蔵ヶ辻・近江町市場附近找到往兼六園／金澤城方向的右回り周遊巴士（RL）站牌，搭車至兼六園下・金沢城或兼六園側，再步行進園；請依現場站牌方向與進園入口核對。若遇大雨，短程計程車更省力。","kenroku","https://www.hokutetsu.co.jp/tourism-bus/castle-town"),
+ ev("kenroku19",2,"13:35","15:10","兼六園｜庭園慢遊","約 95 分，紅葉與雪吊","spot","draft","🍁","午餐後進兼六園，走主要池泉景色與石燈籠、雪吊區域。下午戶外天氣變化大，可依雨勢略調整動線；建議朝南側隨身坂口方向離園，銜接金澤神社。","kenroku","https://shiro-niwa.pref.ishikawa.lg.jp/kenrokuen-garden/access.html"),
+ ev("shrine19",2,"15:15","15:45","金澤神社","兼六園南側，步行約 5～10 分","spot","draft","⛩️","從兼六園南側隨身坂口步行到金澤神社，欣賞朱紅色社殿與金城靈澤。預留 30 分鐘參拜。","kanazawaShrine"),
+ ev("shrine_ishiura19",2,"15:45","16:00","金澤神社 → 石浦神社","步行約 10～15 分","transit","draft","🚶","金澤神社沿兼六園南側往廣坂方向步行，經廣坂附近道路至石浦神社，約 10～15 分；以當天下雨和紅綠燈狀況為準。","ishiura"),
+ ev("ishiura19",2,"16:00","16:25","石浦神社","101 鳥居與參拜","spot","draft","⛩️","石浦神社位於廣坂一帶，鄰近兼六園南側。參拜、看看朱紅鳥居與特色御守；11/19 酉之市尚未經正式官方公告證實，不安排未確認祭典活動。","ishiura","https://www.ishiura.jp/access/index.html"),
+ ev("buffer19",2,"16:25","17:10","自由休息／咖啡","咖啡・休息，晚餐前緩衝","rest","open","☕","在廣坂附近找咖啡廳休息。17:10 左右搭計程車前往飛天龍燒肉新神田本店，盡量 17:45 前抵達。","ishiura"),
+ ev("taxi19",2,"17:10","17:50","前往飛天龍新神田本店","計程車到新神田本店，保留候車與塞車時間","transit","draft","🚕","建議從石浦神社或廣坂周邊叫計程車，前往焼肉 飛天龍 新神田本店（石川県金沢市新神田4丁目14番15号），估計車程約 15～25 分，包含叫車緩衝共預留 40 分鐘。六人同行可能要分乘兩車。","hitenryu","https://hitenryu.jp/pages/about.html"),
+ ev("hitenryu",2,"18:00","19:35","焼肉 飛天龍｜新神田本店","18:00 已訂｜新神田4丁目14-15","food","fixed","🥩","石川県金沢市新神田4丁目14番15号。從石浦神社／廣坂地區建議搭計程車約 15～25 分（估計，視路況），多人可能需分 2 台。公車備案：金澤站東口 11 號乘車處搭 11、56 系統至「新神田」，再步行 3 分，詳見餐廳官方交通頁。","hitenryu","https://hitenryu.jp/pages/about.html"),
+ ev("ret19",2,"19:35","20:05","晚餐後返回飯店","搭計程車最省事（彈性）","transit","optional","🚕","飛天龍在新神田，結束後可搭計程車約 10～20 分回飯店（估計）。若選公車，從「新神田」搭往金澤站方向、再從西口步行約 4 分回飯店；晚間應核對末班班次。","hotel"),
+ ev("uniqlo20",3,"10:00","12:00","UNIQLO 感謝祭","金澤 FORUS 4F｜完整兩小時","shop","draft","🛍️","從飯店走到金澤站、穿過站內至東口，FORUS 4 樓 UNIQLO 約步行 8～12 分。預留兩小時慢慢逛，不需另跑金澤市區其他店。","forus","https://www.forus.co.jp/kanazawa/"),
+ ev("lunch20",3,"12:00","13:00","午餐","車站附近｜待決定","food","open","🍱","UNIQLO 感謝祭後在金澤站附近用午餐，避免為了餐廳跨區往返。下午確定都留在金澤，13:00 後出發去城郭區。","kanazawa"),
+ ev("dinner20",3,"19:00","20:00","晚餐待安排","餐廳未訂位，依當天行程決定","food","open","🍽️","11/20 晚餐保留空白。可以選擇市區或金澤站附近的餐廳；用餐時間不必配合美術館。唐吉訶德可放在晚餐後或視情況取消。","kanazawa"),
+ ev("donki20",3,"20:15","21:30","MEGA 唐吉訶德","西泉 MEGA 店，可直接取消","shop","optional","🛍️","MEGA ドン・キホーテ ラパーク金沢店 位在西泉4-11，不在金澤站附近。若仍有體力，晚餐後搭計程車前往，採購約 60～75 分鐘；回飯店仍需交通。疲勞時不安排。","donki"),
+ ev("checkout21",4,"08:15","08:50","飯店退房／前往巴士站","金澤站西口 ③ 乘車處","transit","draft","🧳","飯店退房後步行約 4 分到金澤站西口；小松空港巴士位於西口 ③ 號站牌。建議 09:00 前到站，先核對行李、巴士班次與付款方式。","hotel"),
+ ev("airportbus21",4,"09:10","09:55","金澤站 → 小松機場","09:10 西口③ → 09:55 小松空港","transit","draft","🚌","北陸鐵道 2026/10/25～11/30 官方時刻表：金澤站西口③ 09:10 發車，小松空港 09:55 到達，對接 11:45 BR157；成人 ¥1,400。班次本身已核實，實際乘車並非預訂，也可能遇塞車／客滿。","airport","https://www.hokutetsu.co.jp/airport-bus/"),
+ ev("checkin21",4,"09:55","11:20","機場報到・安檢","BR157 11:45｜預留約 110 分","transit","draft","🛫","依預計 09:55 到達小松機場，完成報到、托運、安檢、出境；需遵守航空公司最新報到截止時間。","airport"),
+ ev("flight21",4,"11:45","12:20","BR157 起飛返台","11:45 起飛已確認，色塊非飛行時間","transit","fixed","✈️","BR157 11:45 自小松機場起飛。行事曆的色塊只標示出發附近時段，不代表實際飛行時間或抵台時間。","airport")
+];
+const candidates={
+ kanazawa:{tag:'推薦',name:'金澤城與城下町',desc:'金澤城、尾山神社、長町；下午保留休息。',note:'全天只在金澤。城郭與古街受天氣影響，雨大時可提早結束；不安排美術館。',items:[
+ ev("castle20transit",3,"13:00","13:30","金澤站 → 金澤城","東口7號周遊巴士 → 兼六園下・金沢城","transit","draft","🚌","從金澤站東口 7 號站牌搭右回り（RL）周遊巴士，於「兼六園下・金沢城」下車後步行進金澤城。含候車及步行暫估 30 分鐘。","castle","https://www.hokutetsu.co.jp/tourism-bus/castle-town"),
+ ev("castle20",3,"13:30","15:20","金澤城・玉泉院丸庭園","預留約 110 分鐘，欣賞城郭與庭園","spot","draft","🏯","從石川門附近進城，慢慢看石牆、城郭建築與玉泉院丸庭園。雨天請留意戶外石階濕滑，參觀內容可依當日開放調整。離園後往西側尾山神社方向走。","castle"),
+ ev("oyama20",3,"15:35","16:05","尾山神社","金澤城西側步行約 5～10 分","spot","optional","⛩️","金澤城西側步行至尾山神社，欣賞融合和洋風格的彩色玻璃神門。大雨或疲勞時可以略過。","oyama"),
+ ev("nagamachi20",3,"16:20","17:10","長町武家屋敷跡","從尾山神社步行約 10～15 分","spot","optional","🏘️","從尾山神社走往長町，欣賞土牆、石板巷與傳統街景。預留 50 分鐘而非走馬看花；雨大可縮短。","nagamachi"),
+ ev("free20",3,"17:10","18:45","自由休息・下午茶","可在香林坊休息，或返回飯店","rest","open","☕","取消 21 世紀美術館後，這段時間不再補塞景點。找咖啡館休息、逛香林坊周邊，或直接搭公車／計程車回飯店。","nagamachi")
+ ]},
+ rain:{tag:'雨天備案',name:'購物與休息',desc:'車站商場、咖啡與飯店休息。',note:'遇到持續大雨，取消戶外景點，留在金澤站周邊購物休息；不安排美術館。',items:[
+ ev("rain20shop",3,"13:00","15:15","金澤站周邊室內購物","百番街・FORUS 其他樓層","shop","optional","🛍️","午後雨大時取消城郭與長町戶外散步，留在金澤站百番街或 FORUS 逛選物、雜貨及伴手禮。上午 UNIQLO 感謝祭不變，這段不必勉強買東西。","forus"),
+ ev("rain20rest",3,"15:15","18:45","飯店休息／自由活動","雨天完全不必勉強觀光","rest","open","☕","不用多跑一處新景點；午後可以回飯店休息，或依天氣在車站旁逛街喝咖啡。11/20 晚餐和唐吉訶德仍視體力安排。","hotel")
+ ]}
+};
+const wish=[
+ {
+  "icon": "⛩️",
+  "name": "尾山神社",
+  "area": "金澤｜11/20 下午視雨勢",
+  "desc": "金澤城西側可順遊，重點是融合和洋風格的神門，若大雨直接略過。",
+  "place": "oyama"
+ },
+ {
+  "icon": "🏘️",
+  "name": "長町武家屋敷跡",
+  "area": "金澤｜11/20 下午彈性",
+  "desc": "美麗的武家土牆巷弄，但雨大不適合久走；改為咖啡休息也很合理。",
+  "place": "nagamachi"
+ },
+ {
+  "icon": "🛍️",
+  "name": "UNIQLO 感謝祭",
+  "area": "金澤 FORUS｜11/20 10:00–12:00",
+  "desc": "11/17 FORUS 只吃壽司，不購物；11/20 保留完整兩小時。",
+  "place": "forus"
+ },
+ {
+  "icon": "🛒",
+  "name": "MEGA 唐吉訶德",
+  "area": "金澤西泉｜11/20 晚餐後可選",
+  "desc": "需搭車，不是車站附近；白天已經很累就取消。",
+  "place": "donki"
+ }
+];
+const transitLegs=[{"day":0,"title":"機場 → 金澤站西口","mode":"機場巴士","origin":"小松空港 1 號乘車處","dest":"金沢駅西口","duration":"約 40～55 分","how":"依通關後到站時間，搭北鐵往金澤站的機場巴士；非預約制。","remark":"不要把航班落地時間當成可上車時刻。","source":"https://www.hokutetsu.co.jp/airport-bus/"},{"day":0,"title":"金澤站 → 飯店寄行李","mode":"步行","origin":"金澤站西口","dest":"Smile Hotel 金澤西口","duration":"約 4 分","how":"出金澤站西口後走到 スマイルホテル金沢西口駅前，先寄放大行李。","remark":"入住前寄放，拿好護照與隨身物品。","source":"https://smile-hotels.com/hotels/kanazawanishiguchiekimae/"},{"day":0,"title":"飯店 → 能登前寿司","mode":"步行","origin":"Smile Hotel 金澤西口","dest":"金澤 FORUS 6F","duration":"約 8～12 分","how":"沿原路到金澤站西口，穿越站內通道到東口，進 FORUS 搭電梯或手扶梯至 6F。","remark":"中午是「能登前寿司 もりもり寿し」，不是同層其他回轉壽司分店。","source":"https://www.forus.co.jp/kanazawa/shop/1214"},{"day":0,"title":"FORUS → 飯店正式入住","mode":"步行","origin":"金澤 FORUS 6F","dest":"Smile Hotel 金澤西口","duration":"約 8～12 分","how":"午餐後下樓至金澤站東口，穿過站內通道到西口，返回飯店 14:00 後辦理入住。","remark":"當天不去東茶屋街，午後有充分休息時間。","source":"https://smile-hotels.com/hotels/kanazawanishiguchiekimae/"},{"day":0,"title":"飯店 → 金澤站鼓門（可選）","mode":"步行","origin":"Smile Hotel 金澤西口","dest":"金澤站東口・鼓門","duration":"約 8～12 分","how":"休息後若有體力，可步行往車站東口鼓門拍照、逛車站周邊。不安排 FORUS 正式購物。","remark":"疲勞可直接跳過。","source":""},{"day":0,"title":"飯店／金澤站 → 海力晚餐","mode":"步行","origin":"Smile Hotel 金澤西口","dest":"石川県金沢市堀川町4-22","duration":"約 12～15 分","how":"穿越金澤站到東口，再沿堀川町步行至「北陸海鮮 金沢おでん 海力」。","remark":"18:30 已訂位，建議至少 10 分鐘前到。","source":"https://kanazawakairiki3.owst.jp/map"},{"day":1,"title":"飯店 → 金澤新幹線閘門","mode":"步行","origin":"Smile Hotel","dest":"金澤站北陸新幹線閘門","duration":"約 4 分＋站內 10～15 分","how":"從西口進入金澤站，找到北陸新幹線入口，確認往「富山・東京」方向。","remark":"建議 07:25 前進站，準備 07:47 發車的列車。","source":"https://timetable.jr-odekake.net/line-timetable/2831","fixed":false},{"day":1,"title":"金澤 → 新高岡","mode":"北陸新幹線","origin":"金澤站","dest":"新高岡站","duration":"07:47 → 08:01（約14分）","how":"建議搭 つるぎ62（自由席），金澤 07:47 出發、新高岡 08:01 抵達。","remark":"Hokuriku Area Pass 可搭這段自由席；當天站內時刻顯示優先。","source":"https://timetable.jr-odekake.net/line-timetable/2831","fixed":true},{"day":1,"title":"新高岡站 → 白川鄉","mode":"世界遺產巴士","origin":"新高岡站南口④","dest":"白川鄉巴士總站","duration":"08:25 → 10:20（1小時55分）","how":"從新幹線出站後依「南口 バスのりば」標示找 4 號月台；搭加越能巴士前往白川鄉。","remark":"去程已訂 08:25；預留約 24 分出站與轉乘。","source":"https://www.kaetsunou.co.jp/company/sekaiisan/","fixed":true},{"day":1,"title":"白川鄉巴士總站 → 合掌聚落","mode":"步行","origin":"白川郷バスターミナル","dest":"荻町合掌造聚落","duration":"約 5～10 分","how":"出巴士總站步行進入聚落，村內觀光以徒步為主。展望台可視天候評估步行或接駁。","remark":"雨天步道濕滑，預留回程集結時間。","source":"","fixed":false},{"day":1,"title":"聚落 → 午餐與下午散策","mode":"步行","origin":"荻町聚落","dest":"白川鄉餐飲街／村內景點","duration":"步行約 5～15 分／段","how":"午餐尚未決定，建議留在聚落附近，下午再慢慢安排合掌屋、紀念品與咖啡。","remark":"15:45 前回巴士站等候 16:00 班車。","source":"","fixed":false},{"day":1,"title":"白川鄉 → 新高岡","mode":"世界遺產巴士","origin":"白川鄉巴士總站","dest":"新高岡站","duration":"16:00 → 17:55（1小時55分）","how":"搭已訂的世界遺產巴士回新高岡。官方表定到站 17:55；抵達後須轉新幹線，不能直接到金澤。","remark":"巴士遇交通延誤請優先查看新幹線較晚班次。","source":"https://www.kaetsunou.co.jp/company/sekaiisan/","fixed":true},{"day":1,"title":"新高岡 → 金澤","mode":"北陸新幹線","origin":"新高岡站","dest":"金澤站","duration":"建議 18:34 → 18:48（14分）","how":"17:55 到站後前往北陸新幹線金澤方向月台，建議預留約 39 分、乘坐有自由席的適用班次回金澤。","remark":"官方區間時刻資料列有此時段；11/18 當日仍要核對列車名、自由席與營運狀況。","source":"https://timetable.jr-odekake.net/line-timetable/2829","fixed":false},{"day":1,"title":"金澤站 → Minoya","mode":"步行","origin":"金澤站東口（鼓門）","dest":"Shabu-shabu Minoya／此花町8-3 2F","duration":"東口步行約 3 分","how":"晚間 18:48 到站後出東口，往此花町 8-3 前往二樓，直接到餐廳。","remark":"19:30 已訂位；不建議中間回飯店放東西。","source":"https://shabushabu-minoya.com/","fixed":true},{"day":2,"title":"飯店 → 東茶屋街","mode":"步行＋周遊巴士","origin":"金澤站東口 7 號乘車處","dest":"橋場町／東茶屋街","duration":"約 25～35 分","how":"搭「城下まち金沢周遊バス 右回り（RL）」在「橋場町（ひがし・主計町茶屋街）」下車，步行約 5 分到東茶屋街。","remark":"9:00 左右離開飯店，9:30 抵達；店多從 10:00 開門。","source":"https://www.hokutetsu.co.jp/tourism-bus/castle-town"},{"day":2,"title":"東茶屋街 → 主計町","mode":"步行","origin":"東茶屋街","dest":"主計町茶屋街／淺野川","duration":"約 5～10 分","how":"沿著淺野川大橋步行至主計町，不需要搭車。","remark":"可以欣賞河岸和傳統街屋。","source":""},{"day":2,"title":"主計町 → 近江町市場","mode":"步行優先","origin":"主計町茶屋街","dest":"近江町市場","duration":"約 15～20 分","how":"沿市區街道步行到近江町市場；天氣差則步行到「橋場町」搭往金澤站方向巴士，在「武蔵ヶ辻・近江町市場」下車。","remark":"午餐安排在市場內，避免再移動。","source":"https://www.hokutetsu.co.jp/tourism-bus/castle-town"},{"day":2,"title":"近江町市場 → 兼六園","mode":"市區巴士或計程車","origin":"武蔵ヶ辻・近江町市場","dest":"兼六園下・金沢城／兼六園","duration":"含等車約 20～30 分","how":"到武蔵ヶ辻上車點選往兼六園方向的右回り周遊巴士，再步行到兼六園入口；下雨可搭計程車。","remark":"先看站牌所示路線方向和下車站，避免搭反方向。","source":"https://www.hokutetsu.co.jp/tourism-bus/castle-town"},{"day":2,"title":"兼六園 → 金澤神社","mode":"步行","origin":"兼六園南側 隨身坂口","dest":"金澤神社","duration":"約 5～10 分","how":"從兼六園園內南側隨身坂口出園，步行到金澤神社。","remark":"","source":""},{"day":2,"title":"金澤神社 → 石浦神社","mode":"步行","origin":"金澤神社","dest":"石浦神社","duration":"約 10～15 分","how":"往廣坂及廣坂旁道路方向前進，石浦神社在廣坂東側道路對面。","remark":"","source":""},{"day":2,"title":"石浦神社 → 飛天龍本店","mode":"計程車","origin":"石浦神社／廣坂周邊","dest":"新神田4丁目14番15号","duration":"估計車程 15～25 分","how":"17:10 左右於廣坂區搭計程車前往焼肉 飛天龍 新神田本店。","remark":"六人可能分兩車；18:00 訂位，提早到場較安心。","source":"https://hitenryu.jp/pages/about.html"},{"day":2,"title":"飛天龍 → Smile Hotel","mode":"計程車或市區公車","origin":"焼肉 飛天龍 新神田本店","dest":"Smile Hotel 金澤西口","duration":"估計車程 10～20 分","how":"晚餐後搭計程車返回飯店最簡單；如搭公車，請先確認「新神田」站往金澤站方向的末班車時間。","remark":"晚間行程以休息優先。","source":""},{"day":3,"title":"飯店 → UNIQLO 感謝祭","mode":"步行","origin":"Smile Hotel 金澤西口","dest":"金澤 FORUS 4F","duration":"約 8～12 分","how":"穿過金澤站西口到東口，前往 FORUS 4F UNIQLO；10:00～12:00 保留完整購物時間。","remark":"感謝祭開門與贈品資訊以當日公告為準。","source":"https://www.forus.co.jp/kanazawa/"},{"day":3,"title":"FORUS → 金澤城","mode":"步行＋周遊巴士","origin":"金澤站東口 7 號乘車處","dest":"兼六園下・金沢城／金澤城石川門","duration":"約 25～35 分","how":"午餐後搭右回り RL 至「兼六園下・金沢城」，步行到石川門入城；園內慢慢走往玉泉院丸庭園。","remark":"避免再搭新幹線跑富山，11/20 整天留在金澤。","source":"https://www.hokutetsu.co.jp/tourism-bus/castle-town"},{"day":3,"title":"玉泉院丸庭園 → 尾山神社","mode":"步行","origin":"金澤城西側","dest":"尾山神社","duration":"約 5～10 分","how":"由金澤城玉泉院丸庭園附近朝尾山神社方向走，先看彩色玻璃神門。","remark":"若雨大可直接略過，早點回飯店。","source":""},{"day":3,"title":"尾山神社 → 長町武家屋敷","mode":"步行","origin":"尾山神社","dest":"長町武家屋敷跡","duration":"約 10～15 分","how":"由尾山神社往南西方向的長町街區散步，可看到土牆與石板巷。","remark":"街道戶外空間多，雨大時縮短。","source":""},{"day":3,"title":"長町 → 香林坊休息或回飯店","mode":"步行／公車／計程車","origin":"長町武家屋敷跡","dest":"香林坊／金澤站／Smile Hotel","duration":"步行至香林坊約 5～10 分；回站車程另計","how":"長町步行到香林坊找咖啡館休息。如果累了，可由香林坊搭往金澤站方向巴士，從西口返回飯店。","remark":"17:10 後不固定排景點，留足休息時間。","source":"https://www.hokutetsu.co.jp/"},{"day":3,"title":"香林坊／金澤站 → 唐吉訶德（可選）","mode":"計程車建議","origin":"晚餐地點或香林坊／金澤站","dest":"MEGA ドン・キホーテ ラパーク金沢店（西泉4-11）","duration":"車程約 10～25 分，視出發地與路況","how":"晚餐後若還有體力，搭計程車前往西泉 MEGA 唐吉訶德，逛完再搭車回飯店。","remark":"非必去，可直接取消；一般市區巴士路線須依當日站牌另行查詢。","source":"https://www.donki.com/store/shop_detail.php?shop_id=91"},{"day":4,"title":"飯店 → 機場巴士乘車處","mode":"步行","origin":"Smile Hotel（西口）","dest":"金澤站西口③","duration":"約 4～8 分（含找月台）","how":"08:15～08:50 辦理退房與檢查行李，步行至金澤站西口 3 號機場巴士乘車處。","remark":"建議 09:00 前到站等候 09:10 巴士。","source":"https://smile-hotels.com/hotels/kanazawanishiguchiekimae/","fixed":false},{"day":4,"title":"金澤站 → 小松機場","mode":"機場巴士","origin":"金澤站西口③","dest":"小松機場","duration":"09:10 → 09:55（45分）","how":"搭北陸鐵道小松機場巴士，09:10 金澤站西口 3 號發車，09:55 抵達機場，票價成人 ¥1,400。","remark":"這是官方 2026/10/25～11/30 時刻表，對接 11:45 BR157；非訂位，客滿或塞車須留意。","source":"https://www.hokutetsu.co.jp/_wp/wp-content/uploads/2026/10/1025-1130_kanazawa-1.pdf","fixed":true},{"day":4,"title":"小松機場 → BR157 報到","mode":"步行","origin":"小松機場巴士站","dest":"國際線報到櫃台／登機口","duration":"09:55 到達後預留約 1小時50分","how":"下巴士後依國際線指標前往長榮航空櫃檯，托運行李、安檢、出境。","remark":"11:45 是已知起飛時間，報到截止與登機時間以長榮公告為準。","source":"https://www.hokutetsu.co.jp/_wp/wp-content/uploads/2026/10/1025-1130_kanazawa-1.pdf","fixed":true}];
+const flagName={fixed:'已確定',draft:'暫定',optional:'彈性',open:'待決定'};
+const typName={spot:'觀光景點',food:'餐飲',transit:'交通移動',shop:'購物',rest:'休息／彈性'};
+const area=document.querySelector('#day-tabs');let dayIdx=0,view='daily',option='kanazawa';
+try{const v=localStorage.getItem('hokuriku_v9_option');if(candidates[v])option=v}catch(e){}
+function itemsOf(day){let list=base.filter(x=>x.day===day);if(day===3){list=[...list,...candidates[option].items]}return list.sort((a,b)=>a.start.localeCompare(b.start));}
+function navMap(ev){return ev.place?Q(ev.place):'';}
+function textHTML(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function toast(text){let t=document.querySelector('#toast');t.textContent=text;t.classList.add('show');clearTimeout(toast.timer);toast.timer=setTimeout(()=>t.classList.remove('show'),2300);}
+
+const journeyDest={0:['金澤初見・入住日','小松機場與金澤市區'],1:['白川鄉巴士日','轉乘前後請抓緩衝'],2:['金澤完整日','市區大部分以步行為主'],3:['金澤城與購物','已確定留在金澤；雨天可改室內慢遊'],4:['回台日','機場巴士 09:10 金澤站西口發']};
+function directionsUrl(l){return 'https://www.google.com/maps/dir/?api=1&origin='+encodeURIComponent(l.origin)+'&destination='+encodeURIComponent(l.dest)+'&travelmode='+(/步行/.test(l.mode)&&!/巴士|鐵道|新幹線|電車|市電/.test(l.mode)?'walking':/計程車/.test(l.mode)?'driving':'transit');}
+function cardTransport(l){return '<article class="transport-card"><span class="tag '+(l.fixed?'exact':'')+'">'+(l.fixed?'已核對班次／訂位':'路線與預估時間')+' · '+textHTML(l.mode)+'</span><h4>'+textHTML(l.title)+'</h4><div class="transport-endpoints"><span>'+textHTML(l.origin)+'</span><i>→</i><span>'+textHTML(l.dest)+'</span></div><p><b>預計：</b>'+textHTML(l.duration)+'</p><p>'+textHTML(l.how)+'</p>'+(l.remark?'<p class="important"><b>注意：</b>'+textHTML(l.remark)+'</p>':'')+'<div class="tlinks"><a class="small-link" href="'+directionsUrl(l)+'" target="_blank" rel="noopener noreferrer">Google Maps 路線 ↗</a>'+(l.source?'<a class="small-link" href="'+textHTML(l.source)+'" target="_blank" rel="noopener noreferrer">官方依據 ↗</a>':'')+'</div></article>';}
+function renderTransport(){let root=document.querySelector('#transport-days');root.innerHTML=days.map((d,i)=>'<section class="transport-group"><h3>DAY '+('0'+(i+1))+' · '+d.short+'｜'+journeyDest[i][0]+'</h3><p class="tiny" style="margin:0 0 10px;color:var(--muted)">'+journeyDest[i][1]+'</p><div class="transport-cards">'+transitLegs.filter(l=>l.day===i).map(cardTransport).join('')+'</div></section>').join('');}
+const eventTransportLinks={bus17:0,bag17:1,mori:2,hotel17:3,tea17:4,higashi:4,kazue:5,back:6,kairiki:7,depart18:8,shin:9,bus18go:10,shir1:11,shirfood:12,shir2:12,bus18back:13,shinback18:14,rest18:15,minoya:15,market19:16,castle19:17,kenroku19:18,shrine19:19,lunch19:20,museum19:20,ishiura19:21,buffer19:22,taxi19:22,hitenryu:22,ret19:23,uniqlo20:24,lunch20:25,donki20:32,checkout21:33,airportbus21:34,checkin21:35,flight21:35,toya0:26,toya1:26,toya2:27,toya3:27,fui0:28,fui1:28,fui2:29,waku0:30,waku1:30,waku2:31};
+function getLeg(e){return transitLegs[eventTransportLinks[e.id]]||null;}
+function legHtml(e){const l=getLeg(e);return l?'<div class="transit-mini"><b>◎ 前往這一站｜'+textHTML(l.mode)+' · '+textHTML(l.duration)+'</b>'+textHTML(l.how)+(l.remark?'<div style="margin-top:5px">注意：'+textHTML(l.remark)+'</div>':'')+'<div class="tlinks"><a class="small-link" href="'+directionsUrl(l)+'" target="_blank" rel="noopener noreferrer">逐段導航 ↗</a>'+(l.source?'<a class="small-link" href="'+textHTML(l.source)+'" target="_blank" rel="noopener noreferrer">官方資訊 ↗</a>':'')+'</div></div>':'';}
+function renderTabs(){area.replaceChildren();days.forEach((d,i)=>{const b=document.createElement('button');b.className='day-tab'+(i===dayIdx?' on':'');b.type='button';b.setAttribute('aria-pressed',i===dayIdx?'true':'false');b.innerHTML='<div class="day-num">DAY 0'+(i+1)+'　'+d.week+'</div><div class="day-date">'+d.short+'</div><div class="day-label">'+d.title+'</div>';b.addEventListener('click',()=>selectDay(i));area.appendChild(b)});}
+function selectDay(i){dayIdx=Math.max(0,Math.min(4,i));renderDaily();if(view!=='daily')switchView('daily');history.replaceState(null,'','#day='+(dayIdx+1));}
+function renderDaily(){const d=days[dayIdx],items=itemsOf(dayIdx);renderTabs();document.querySelector('#day-date').textContent=d.date;document.querySelector('#day-title').textContent=d.heading;document.querySelector('#day-desc').textContent=d.desc+(dayIdx===3?'｜目前採用：'+candidates[option].name+'（景點時段可調整）':'');document.querySelector('#day-chips').innerHTML=d.chips.map(c=>'<span class="chip">'+textHTML(c)+'</span>').join('');document.querySelector('#day-count').textContent='（'+items.length+' 項）';const container=document.querySelector('#daily-items');container.replaceChildren();items.forEach(e=>{const section=document.createElement('div');section.className='item '+e.kind+(e.flag==='fixed'?' booked':'');const map=e.place?'<a class="small-link" href="'+navMap(e)+'" target="_blank" rel="noopener noreferrer">地圖導航 ↗</a>':'';const official=e.link?'<a class="small-link" href="'+textHTML(e.link)+'" target="_blank" rel="noopener noreferrer">官方／店家資訊 ↗</a>':'';section.innerHTML='<div class="time">'+textHTML(e.start)+'<small>'+textHTML(e.end)+'</small></div><details class="event-card '+(e.flag==='fixed'?'booked':'')+'"><summary><div class="e-icon">'+e.icon+'</div><div class="e-main"><div class="e-kicker">'+textHTML(typName[e.kind])+'</div><div class="e-title">'+textHTML(e.title)+'</div><div class="e-sub">'+textHTML(e.subtitle)+'</div></div><span class="badge '+e.flag+'">'+flagName[e.flag]+'</span><span class="chevron">›</span></summary><div class="event-more"><p>'+textHTML(e.desc)+'</p>'+legHtml(e)+'<div class="event-links">'+map+official+'</div></div></details>';container.appendChild(section)});document.querySelector('#route-list').innerHTML=d.route.map(x=>'<div class="routestep">'+textHTML(x)+'</div>').join('');document.querySelector('#transit-note').textContent=d.transit;document.querySelector('#day-todo').innerHTML=d.todo.map(x=>'<li>'+textHTML(x)+'</li>').join('');document.querySelector('#prev-btn').disabled=dayIdx===0;document.querySelector('#next-btn').disabled=dayIdx===4;document.querySelector('#expand-all').textContent='全部展開';}
+function renderCalendar(){document.querySelector('#calendar-head').innerHTML='<div>日本時間</div>'+days.map(d=>'<div><div class="cw">'+d.week+'</div><div class="cd">'+d.short+'</div><div class="ct">'+d.title+'</div></div>').join('');const content=document.querySelector('#calendar-content');content.replaceChildren();const t=document.createElement('div');t.className='cal-times';for(let h=7;h<=22;h++){let s=document.createElement('span');s.className='hour';s.textContent=String(h).padStart(2,'0')+':00';s.style.top=((h-7)*64)+'px';t.appendChild(s)}content.appendChild(t);for(let d=0;d<5;d++){const col=document.createElement('div');col.className='cal-day';itemsOf(d).forEach(e=>{const n=s=>{let [h,m]=s.split(':').map(Number);return 60*h+m;},top=(n(e.start)-420)*64/60,height=(n(e.end)-n(e.start))*64/60;const b=document.createElement('button');b.type='button';b.className='cal-event '+(e.flag==='fixed'?'booked':e.flag==='open'?'open':e.flag==='optional'?'optional':e.kind==='transit'?'transit':e.kind==='food'?'lunch':'draft')+(height<39?' small':'')+(e.id==='pending20'?' pending':'');b.style.top=top+'px';b.style.height=Math.max(18,height-2)+'px';b.innerHTML='<div class="cal-time">'+textHTML(e.start)+'–'+textHTML(e.end)+'</div><div class="cal-title">'+textHTML(e.title)+'</div>'+(height>72?'<div class="cal-note">'+textHTML(e.subtitle)+'</div>':'');b.title=e.start+'｜'+e.title;b.addEventListener('click',()=>showModal(e));col.appendChild(b)});content.appendChild(col)}}
+function showModal(e){const m=document.querySelector('#modal');document.querySelector('#modal-title').textContent=e.title;document.querySelector('#modal-time').textContent=days[e.day].date+'　'+e.start+'–'+e.end;document.querySelector('#modal-desc').textContent=e.desc;document.querySelector('#modal-flag').innerHTML='<span class="badge '+e.flag+'">'+flagName[e.flag]+'</span>';const actions=document.querySelector('#modal-actions');actions.replaceChildren();if(e.place){let a=document.createElement('a');a.className='btn primary';a.href=navMap(e);a.target='_blank';a.rel='noopener noreferrer';a.textContent='地圖導航 ↗';actions.appendChild(a)}if(e.link){let a=document.createElement('a');a.className='btn';a.href=e.link;a.target='_blank';a.rel='noopener noreferrer';a.textContent='店家資訊 ↗';actions.appendChild(a)}m.hidden=false;document.body.style.overflow='hidden';document.querySelector('#modal-close').focus();}
+function closeModal(){document.querySelector('#modal').hidden=true;document.body.style.overflow='';}
+function renderScenarios(){let g=document.querySelector('#scenario-grid');g.replaceChildren();Object.entries(candidates).forEach(([key,c])=>{let b=document.createElement('button');b.type='button';b.className='scenario'+(option===key?' on':'');b.setAttribute('aria-pressed',option===key?'true':'false');b.innerHTML='<span class="tag">'+c.tag+'</span><strong>'+c.name+'</strong><small>'+c.desc+'</small>';b.addEventListener('click',()=>{option=key;try{localStorage.setItem('hokuriku_v9_option',option)}catch(e){}renderScenarios();renderCalendar();renderDaily();toast('已切換 11/20 金澤版本')});g.appendChild(b)});document.querySelector('#scenario-note').textContent=candidates[option].note;}
+function renderWishlist(){document.querySelector('#wishlist').innerHTML=wish.map(w=>'<article class="wish"><div class="wish-top"><span class="wish-icon">'+w.icon+'</span><h3>'+textHTML(w.name)+'</h3></div><div class="area">'+textHTML(w.area)+'</div><p>'+textHTML(w.desc)+'</p><a href="'+Q(MAPS[w.place])+'" target="_blank" rel="noopener noreferrer">查看地圖 ↗</a></article>').join('')}
+function switchView(name){view=name;document.querySelectorAll('[data-view]').forEach(b=>{const active=b.dataset.view===name;b.classList.toggle('on',active);b.setAttribute('aria-pressed',active?'true':'false')});['daily','calendar','places','transport'].forEach(x=>document.querySelector('#panel-'+x).hidden=x!==name);const intro={daily:['每日行程','按日期查看詳細動線、交通提醒及 Google Maps 導航。'],calendar:['五日週行事曆','五天並排，依照日本時間軸查看所有行程的預留時段。'],places:['景點與備用方案','11/20 可直接切換方案預覽；未訂景點維持彈性。'],transport:['逐段交通攻略','含乘車站、路線、目的地、估算時間和官方連結；也可在每日行程展開查看。']}[name];document.querySelector('#section-title').textContent=intro[0];document.querySelector('#section-desc').textContent=intro[1];if(name==='calendar')renderCalendar();if(name==='transport')renderTransport();}
+function copySummary(){const lines=['北陸日和｜2026/11/17–11/21','住宿：スマイルホテル金沢西口駅前','（「已確定」才表示班機、巴士出發時間或餐廳預訂；其餘都是暫定）',''];days.forEach((d,i)=>{lines.push('【'+d.date+'】'+d.heading);itemsOf(i).forEach(e=>lines.push(e.start+' '+e.title+' ['+flagName[e.flag]+']'));lines.push('')});lines.push('交通必備：11/17先寄行李；11/18新高岡08:25→白川鄉10:20、白川鄉16:00→新高岡17:55；11/21金澤西口③09:10→機場09:55。');lines.push('11/20 金澤下午方案：'+candidates[option].name+'（景點時段可調整）');const txt=lines.join('\n');if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(txt).then(()=>toast('行程摘要已複製'),()=>fallback(txt))}else fallback(txt)}
+function fallback(text){let a=document.createElement('textarea');a.value=text;a.style.position='fixed';a.style.left='-99999px';document.body.appendChild(a);a.select();try{document.execCommand('copy');toast('行程摘要已複製')}catch(e){toast('無法自動複製，請手動選取文字')}a.remove()}
+document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>switchView(b.dataset.view)));
+document.querySelector('#copy-btn').addEventListener('click',copySummary);
+document.querySelector('#expand-all').addEventListener('click',()=>{const arr=[...document.querySelectorAll('#daily-items details')];let expand=arr.some(x=>!x.open);arr.forEach(x=>x.open=expand);document.querySelector('#expand-all').textContent=expand?'全部收合':'全部展開'});
+document.querySelector('#prev-btn').addEventListener('click',()=>selectDay(dayIdx-1));document.querySelector('#next-btn').addEventListener('click',()=>selectDay(dayIdx+1));
+document.querySelector('#modal-close').addEventListener('click',closeModal);document.querySelector('#modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+const hashed=location.hash.match(/day=(\d+)/);if(hashed)dayIdx=Math.max(0,Math.min(4,Number(hashed[1])-1));renderScenarios();renderWishlist();renderDaily();renderCalendar();renderTransport();
+</script>
+</body>
+</html>
