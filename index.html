@@ -53,6 +53,8 @@ header{height:76px;display:flex;align-items:center;justify-content:space-between
 @media print{#panel-transport{display:none!important}}
 .supermarket-links{display:flex;flex-wrap:wrap;gap:6px}
 .supermarket-links .small-link{display:inline-block;white-space:nowrap}
+.segmented button{white-space:nowrap}
+@media(max-width:480px){.segmented{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-radius:21px}}
 </style>
 </head>
 <body>
@@ -86,7 +88,7 @@ header{height:76px;display:flex;align-items:center;justify-content:space-between
 <div class="notice"><span aria-hidden="true">✳</span><div><b>行程版本 V9｜2026.11.16</b>　11/17 抵達金澤先寄行李、吃壽司、14:00 後入住休息；東茶屋街改排 11/19 上午 9:30，配合店家 10:00 左右開門。11/20 確定留在金澤：UNIQLO 感謝祭、金澤城、尾山神社、長町武家屋敷及購物。已取消 21 世紀美術館，下午保留休息空檔。白川鄉巴士、三家晚餐訂位及返台交通不變。<strong>除已訂位項目，其他時段均為規劃估計。</strong></div></div>
 <div class="views">
   <div class="section-intro"><div class="kicker">TRAVEL PLANNER</div><h2 id="section-title">每日行程</h2><p id="section-desc">按日期查看詳細動線、交通提醒及 Google Maps 導航。</p></div>
-  <nav class="segmented" aria-label="切換檢視"><button data-view="daily" class="on" aria-pressed="true">每日行程</button><button data-view="calendar" aria-pressed="false">週行事曆</button><button data-view="places" aria-pressed="false">景點候選</button><button data-view="transport" aria-pressed="false">交通攻略</button><button data-view="rain" aria-pressed="false">雨天備案</button></nav>
+  <nav class="segmented" aria-label="切換檢視"><button data-view="daily" class="on" aria-pressed="true">每日行程</button><button data-view="calendar" aria-pressed="false">週行事曆</button><button data-view="places" aria-pressed="false">景點候選</button><button data-view="transport" aria-pressed="false">交通攻略</button><button data-view="rain" aria-pressed="false">雨天備案</button><button type="button" data-view="supermarkets" aria-pressed="false">超市</button></nav>
 </div>
 <main>
 <section id="panel-daily" class="panel">
@@ -142,16 +144,16 @@ header{height:76px;display:flex;align-items:center;justify-content:space-between
     <article class="side-card">
       <h3>金澤車站西口</h3>
       <p><strong>Cross Gate 金澤</strong> 1、2 樓有餐廳和咖啡店。適合從西口的飯店出發，或東口午餐候位太久時過來找座位。</p>
-      <p><strong>超市採買</strong>　11/20 13:00～14:00 逛金澤站內百番街「あんと西」2 樓的 <strong>100banマート</strong>（09:00～20:30），適合買零食、飲料和熟食。11/17 約 20:15～20:45 若晚餐後還有體力，可改逛飯店周邊的在地超市 <strong>マルエー元菊店</strong>（09:30～24:00），適合買便當、熟食與在地食品。兩處可步行，若搭計程車需另外付費。</p>
-      <p class="supermarket-links"><a class="small-link" href="https://www.google.com/maps/search/?api=1&amp;query=100ban%E3%83%9E%E3%83%BC%E3%83%88%20%E9%87%91%E6%B2%A2" target="_blank" rel="noopener noreferrer">100banマート 地圖 ↗</a> <a class="small-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%9E%E3%83%AB%E3%82%A8%E3%83%BC%E5%85%83%E8%8F%8A%E5%BA%97" target="_blank" rel="noopener noreferrer">マルエー元菊店 地圖 ↗</a> <a class="small-link" href="https://s-marue.co.jp/store/motogiku/" target="_blank" rel="noopener noreferrer">マルエー營業時間 ↗</a></p>
+      <p>11/20 午餐後安排站內超市。飯店附近另有晚間採買選項。</p>
+      <p><button type="button" class="small-link" data-open-supermarkets>看超市與步行路線</button></p>
       <p><strong>交通：</strong>從金澤站西口步行免車票。</p>
       <p><a class="small-link" href="https://ore-sc.jp/crossgate-kanazawa/" target="_blank" rel="noopener noreferrer">樓層與店家 ↗</a></p>
     </article>
     <article class="side-card">
       <h3>近江町市場／尾張町</h3>
       <p>11/19 上午可改看<strong>金澤蓄音器館</strong>，中午去有遮棚的<strong>近江町市場</strong>。兩處之間有一段戶外步行。</p>
-      <p>11/19 若改走雨天路線，可在午餐後約 13:10～13:40 步行到市場對面的<strong>金澤エムザ B1 食品樓層</strong>（10:00～19:30），逛熟食、麵包和在地食品。想逛一般超市，可同時段擇一改去 <strong>マルエー彦三店</strong>（09:30～22:30），需走戶外。兩處從市場步行免車票。</p>
-      <p class="supermarket-links"><a class="small-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E9%87%91%E6%B2%A2%E3%82%A8%E3%83%A0%E3%82%B6" target="_blank" rel="noopener noreferrer">金澤エムザ 地圖 ↗</a> <a class="small-link" href="https://www.kmza.jp/mz_cat/cat01/" target="_blank" rel="noopener noreferrer">食品樓層店家 ↗</a> <a class="small-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%9E%E3%83%AB%E3%82%A8%E3%83%BC%E5%BD%A6%E4%B8%89%E5%BA%97%20%E9%87%91%E6%B2%A2" target="_blank" rel="noopener noreferrer">マルエー彦三店 地圖 ↗</a> <a class="small-link" href="https://s-marue.co.jp/store/hikoso/" target="_blank" rel="noopener noreferrer">マルエー彦三店營業時間 ↗</a></p>
+      <p>11/19 若改走雨天路線，可在市場午餐後就近逛食品樓層或超市。</p>
+      <p><button type="button" class="small-link" data-open-supermarkets>看超市與步行路線</button></p>
       <p>如果午餐後風雨仍大，可以先回飯店休息，傍晚再出發赴 18:00 飛天龍晚餐。</p>
       <p><strong>交通：</strong>市場到蓄音器館步行免車票。若搭北鐵周遊巴士或計程車，須另付費。</p>
       <p><a class="small-link" href="https://kanazawa-museum.jp/chikuonki/index.html" target="_blank" rel="noopener noreferrer">蓄音器館開館與試聽資訊 ↗</a></p>
@@ -169,6 +171,39 @@ header{height:76px;display:flex;align-items:center;justify-content:space-between
       <p>雨大就選和田家，午餐後提早回巴士站等 16:00 回程。若去程停駛，改走金澤車站區，晚上照原訂 19:30 Minoya。</p>
       <p><strong>交通：</strong>金澤 ↔ 新高岡的北陸新幹線普通車自由席可用 JR Pass。兩段已訂世界遺產巴士另付費，村內步行免車票。</p>
       <p><a class="small-link" href="https://www.vill.shirakawa.lg.jp/1609.htm" target="_blank" rel="noopener noreferrer">和田家 ↗</a> <a class="small-link" href="https://www.shirakawa-go.gr.jp/active/12/" target="_blank" rel="noopener noreferrer">明善寺鄉土館 ↗</a></p>
+    </article>
+  </div>
+</section>
+<section id="panel-supermarkets" class="panel" aria-label="超市與食品採買" hidden>
+  <div class="day-heading">
+    <h2>按區域找超市</h2>
+    <p>11/20 13:00～14:00 安排車站內超市，晴天、雨天都適用。其他店可依所在區域選擇。步行時間是單程估計，包含過馬路或上下樓。</p>
+    <p>步行免車票。若因風雨改搭計程車，須另付車資，Hokuriku Area Pass 無法使用。</p>
+  </div>
+  <div class="transport-cards">
+    <article class="side-card">
+      <h3>金澤站內｜100banマート</h3>
+      <p>金澤百番街「あんと西」2 樓，09:00～20:30。適合買零食、飲料和熟食。<strong>11/20 13:00～14:00</strong>，逛完 FORUS 和用完午餐後前往。</p>
+      <p>從 FORUS 4 樓約走 6～10 分鐘，走東口進站並穿過站內通道，往西口側上 2 樓。若從飯店出發，走西口進站，約 5～8 分鐘。</p>
+      <p class="supermarket-links"><a class="small-link" href="https://www.google.com/maps/dir/?api=1&amp;origin=%E3%83%A6%E3%83%8B%E3%82%AF%E3%83%AD+%E9%87%91%E6%B2%A2%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A9%E3%82%B9%E5%BA%97&amp;destination=100ban%E3%83%9E%E3%83%BC%E3%83%88+%E9%87%91%E6%B2%A2%E7%99%BE%E7%95%AA%E8%A1%97+%E3%81%82%E3%82%93%E3%81%A8%E8%A5%BF&amp;travelmode=walking" target="_blank" rel="noopener noreferrer">從 FORUS 步行 ↗</a> <a class="small-link" href="https://www.google.com/maps/dir/?api=1&amp;origin=%E3%82%B9%E3%83%9E%E3%82%A4%E3%83%AB%E3%83%9B%E3%83%86%E3%83%AB%E9%87%91%E6%B2%A2%E8%A5%BF%E5%8F%A3%E9%A7%85%E5%89%8D&amp;destination=100ban%E3%83%9E%E3%83%BC%E3%83%88+%E9%87%91%E6%B2%A2%E7%99%BE%E7%95%AA%E8%A1%97+%E3%81%82%E3%82%93%E3%81%A8%E8%A5%BF&amp;travelmode=walking" target="_blank" rel="noopener noreferrer">從飯店步行 ↗</a> <a class="small-link" href="https://www.100bangai.co.jp/assets/pdf/businesshours_241101.pdf" target="_blank" rel="noopener noreferrer">百番街營業時間 ↗</a></p>
+    </article>
+    <article class="side-card">
+      <h3>飯店周邊｜マルエー元菊店</h3>
+      <p>在地超市，09:30～24:00。想逛便當、熟食和當地食品，可留作 <strong>11/17 晚餐後</strong>的彈性選項。</p>
+      <p>從飯店步行約 15～20 分鐘，路段多在戶外。風雨大時優先選車站內的 100banマート。</p>
+      <p class="supermarket-links"><a class="small-link" href="https://www.google.com/maps/dir/?api=1&amp;origin=%E3%82%B9%E3%83%9E%E3%82%A4%E3%83%AB%E3%83%9B%E3%83%86%E3%83%AB%E9%87%91%E6%B2%A2%E8%A5%BF%E5%8F%A3%E9%A7%85%E5%89%8D&amp;destination=%E3%83%9E%E3%83%AB%E3%82%A8%E3%83%BC%E5%85%83%E8%8F%8A%E5%BA%97+%E9%87%91%E6%B2%A2%E5%B8%82%E5%85%83%E8%8F%8A%E7%94%BA17-33&amp;travelmode=walking" target="_blank" rel="noopener noreferrer">從飯店步行 ↗</a> <a class="small-link" href="https://s-marue.co.jp/store/motogiku/" target="_blank" rel="noopener noreferrer">店家營業時間 ↗</a></p>
+    </article>
+    <article class="side-card">
+      <h3>近江町市場周邊｜マルエー彦三店</h3>
+      <p>在地超市，09:30～22:30。<strong>11/19 約 13:10～13:40</strong>，若午餐後因下雨略過戶外行程，可和金澤エムザ擇一。</p>
+      <p>從近江町市場步行約 6～10 分鐘，需走戶外路段。</p>
+      <p class="supermarket-links"><a class="small-link" href="https://www.google.com/maps/dir/?api=1&amp;origin=%E8%BF%91%E6%B1%9F%E7%94%BA%E5%B8%82%E5%A0%B4+%E9%87%91%E6%B2%A2&amp;destination=%E3%83%9E%E3%83%AB%E3%82%A8%E3%83%BC%E5%BD%A6%E4%B8%89%E5%BA%97+%E9%87%91%E6%B2%A2%E5%B8%82%E5%BD%A6%E4%B8%89%E7%94%BA2-9-9&amp;travelmode=walking" target="_blank" rel="noopener noreferrer">從市場步行 ↗</a> <a class="small-link" href="https://s-marue.co.jp/store/hikoso/" target="_blank" rel="noopener noreferrer">店家營業時間 ↗</a></p>
+    </article>
+    <article class="side-card">
+      <h3>近江町市場對面｜金澤エムザ B1</h3>
+      <p>百貨食品樓層，10:00～19:30。可買熟食、麵包和在地食品。<strong>11/19 約 13:10～13:40</strong>，若想縮短戶外路段，可優先選這裡。</p>
+      <p>從近江町市場約走 2～5 分鐘，過馬路後下到 B1。</p>
+      <p class="supermarket-links"><a class="small-link" href="https://www.google.com/maps/dir/?api=1&amp;origin=%E8%BF%91%E6%B1%9F%E7%94%BA%E5%B8%82%E5%A0%B4+%E9%87%91%E6%B2%A2&amp;destination=%E9%87%91%E6%B2%A2%E3%82%A8%E3%83%A0%E3%82%B6+%E9%87%91%E6%B2%A2%E5%B8%82%E6%AD%A6%E8%94%B5%E7%94%BA15-1&amp;travelmode=walking" target="_blank" rel="noopener noreferrer">從市場步行 ↗</a> <a class="small-link" href="https://www.kmza.jp/mz_cat/cat01/" target="_blank" rel="noopener noreferrer">食品樓層店家 ↗</a></p>
     </article>
   </div>
 </section>
@@ -442,10 +477,16 @@ function showModal(e){const m=document.querySelector('#modal');document.querySel
 function closeModal(){document.querySelector('#modal').hidden=true;document.body.style.overflow='';}
 function renderScenarios(){let g=document.querySelector('#scenario-grid');g.replaceChildren();Object.entries(candidates).forEach(([key,c])=>{let b=document.createElement('button');b.type='button';b.className='scenario'+(option===key?' on':'');b.setAttribute('aria-pressed',option===key?'true':'false');b.innerHTML='<span class="tag">'+c.tag+'</span><strong>'+c.name+'</strong><small>'+c.desc+'</small>';b.addEventListener('click',()=>{option=key;try{localStorage.setItem('hokuriku_v9_option',option)}catch(e){}renderScenarios();renderCalendar();renderDaily();toast('已切換 11/20 金澤版本')});g.appendChild(b)});document.querySelector('#scenario-note').textContent=candidates[option].note;}
 function renderWishlist(){document.querySelector('#wishlist').innerHTML=wish.map(w=>'<article class="wish"><div class="wish-top"><span class="wish-icon">'+w.icon+'</span><h3>'+textHTML(w.name)+'</h3></div><div class="area">'+textHTML(w.area)+'</div><p>'+textHTML(w.desc)+'</p><a href="'+Q(MAPS[w.place])+'" target="_blank" rel="noopener noreferrer">查看地圖 ↗</a></article>').join('')}
-function switchView(name){view=name;document.querySelectorAll('[data-view]').forEach(b=>{const active=b.dataset.view===name;b.classList.toggle('on',active);b.setAttribute('aria-pressed',active?'true':'false')});['daily','calendar','places','transport','rain'].forEach(x=>document.querySelector('#panel-'+x).hidden=x!==name);const intro={daily:['每日行程','按日期查看詳細動線、交通提醒及 Google Maps 導航。'],calendar:['五日週行事曆','五天並排，依照日本時間軸查看所有行程的預留時段。'],places:['景點與備用方案','11/20 可直接切換方案預覽；未訂景點維持彈性。'],rain:['雨天備案','依所在區域選擇室內活動，減少風雨中的移動。'],transport:['逐段交通攻略','含乘車站、路線、目的地、估算時間和官方連結；也可在每日行程展開查看。']}[name];document.querySelector('#section-title').textContent=intro[0];document.querySelector('#section-desc').textContent=intro[1];if(name==='calendar')renderCalendar();if(name==='transport')renderTransport();}
+function switchView(name){view=name;document.querySelectorAll('[data-view]').forEach(b=>{const active=b.dataset.view===name;b.classList.toggle('on',active);b.setAttribute('aria-pressed',active?'true':'false')});['daily','calendar','places','transport','rain','supermarkets'].forEach(x=>document.querySelector('#panel-'+x).hidden=x!==name);const intro={daily:['每日行程','按日期查看詳細動線、交通提醒及 Google Maps 導航。'],calendar:['五日週行事曆','五天並排，依照日本時間軸查看所有行程的預留時段。'],places:['景點與備用方案','11/20 可直接切換方案預覽；未訂景點維持彈性。'],rain:['雨天備案','依所在區域選擇室內活動，減少風雨中的移動。'],supermarkets:['超市','依照所在區域查看採買時段、步行時間與導航。'],transport:['逐段交通攻略','含乘車站、路線、目的地、估算時間和官方連結；也可在每日行程展開查看。']}[name];document.querySelector('#section-title').textContent=intro[0];document.querySelector('#section-desc').textContent=intro[1];if(name==='calendar')renderCalendar();if(name==='transport')renderTransport();}
 function copySummary(){const lines=['北陸日和｜2026/11/17–11/21','住宿：スマイルホテル金沢西口駅前','（「已確定」才表示班機、巴士出發時間或餐廳預訂；其餘都是暫定）',''];days.forEach((d,i)=>{lines.push('【'+d.date+'】'+d.heading);itemsOf(i).forEach(e=>lines.push(e.start+' '+e.title+' ['+flagName[e.flag]+']'));lines.push('')});lines.push('交通必備：11/17先寄行李；11/18新高岡08:25→白川鄉10:20、白川鄉16:00→新高岡17:55；11/21金澤西口③09:10→機場09:55。');lines.push('11/20 金澤下午方案：'+candidates[option].name+'（景點時段可調整）');const txt=lines.join('\n');if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(txt).then(()=>toast('行程摘要已複製'),()=>fallback(txt))}else fallback(txt)}
 function fallback(text){let a=document.createElement('textarea');a.value=text;a.style.position='fixed';a.style.left='-99999px';document.body.appendChild(a);a.select();try{document.execCommand('copy');toast('行程摘要已複製')}catch(e){toast('無法自動複製，請手動選取文字')}a.remove()}
 document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>switchView(b.dataset.view)));
+document.querySelectorAll('[data-open-supermarkets]').forEach(button => {
+  button.addEventListener('click', () => {
+    switchView('supermarkets');
+    document.querySelector('[data-view="supermarkets"]').focus();
+  });
+});
 document.querySelector('#copy-btn').addEventListener('click',copySummary);
 document.querySelector('#expand-all').addEventListener('click',()=>{const arr=[...document.querySelectorAll('#daily-items details')];let expand=arr.some(x=>!x.open);arr.forEach(x=>x.open=expand);document.querySelector('#expand-all').textContent=expand?'全部收合':'全部展開'});
 document.querySelector('#prev-btn').addEventListener('click',()=>selectDay(dayIdx-1));document.querySelector('#next-btn').addEventListener('click',()=>selectDay(dayIdx+1));
