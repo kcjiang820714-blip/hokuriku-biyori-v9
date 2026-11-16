@@ -51,6 +51,8 @@ header{height:76px;display:flex;align-items:center;justify-content:space-between
 .transport-foot{font-size:12px;color:var(--muted);margin-top:16px}
 @media(max-width:900px){.transport-tips{grid-template-columns:1fr}.transport-cards{grid-template-columns:1fr}}
 @media print{#panel-transport{display:none!important}}
+.supermarket-links{display:flex;flex-wrap:wrap;gap:6px}
+.supermarket-links .small-link{display:inline-block;white-space:nowrap}
 </style>
 </head>
 <body>
@@ -133,19 +135,23 @@ header{height:76px;display:flex;align-items:center;justify-content:space-between
   <div class="transport-cards">
     <article class="side-card">
       <h3>金澤車站東口</h3>
-      <p><strong>金澤百番街</strong>在站內，可吃飯、買伴手禮。站旁的<strong>金澤 FORUS</strong>可逛街、喝咖啡，6 樓有 11/17 午餐候選的もりもり寿し。</p>
+      <p><strong>金澤百番街</strong>在站內，可吃飯、買伴手禮。11/20 午餐後可從東口穿過站內，到西口一側的 100banマート 採買。站旁的<strong>金澤 FORUS</strong>可逛街、喝咖啡，6 樓有 11/17 午餐候選的もりもり寿し。</p>
       <p>適合 11/17 入住前、11/20 購物後，或 11/21 搭機場巴士前有餘裕時。風雨大就留在站內。</p>
       <p><strong>交通：</strong>站內及 FORUS 步行免車票。11/21 機場巴士另付費，JR Pass 已到期。</p>
     </article>
     <article class="side-card">
       <h3>金澤車站西口</h3>
       <p><strong>Cross Gate 金澤</strong> 1、2 樓有餐廳和咖啡店。適合從西口的飯店出發，或東口午餐候位太久時過來找座位。</p>
+      <p><strong>超市採買</strong>　11/20 13:00～14:00 逛金澤站內百番街「あんと西」2 樓的 <strong>100banマート</strong>（09:00～20:30），適合買零食、飲料和熟食。11/17 約 20:15～20:45 若晚餐後還有體力，可改逛飯店周邊的在地超市 <strong>マルエー元菊店</strong>（09:30～24:00），適合買便當、熟食與在地食品。兩處可步行，若搭計程車需另外付費。</p>
+      <p class="supermarket-links"><a class="small-link" href="https://www.google.com/maps/search/?api=1&amp;query=100ban%E3%83%9E%E3%83%BC%E3%83%88%20%E9%87%91%E6%B2%A2" target="_blank" rel="noopener noreferrer">100banマート 地圖 ↗</a> <a class="small-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%9E%E3%83%AB%E3%82%A8%E3%83%BC%E5%85%83%E8%8F%8A%E5%BA%97" target="_blank" rel="noopener noreferrer">マルエー元菊店 地圖 ↗</a> <a class="small-link" href="https://s-marue.co.jp/store/motogiku/" target="_blank" rel="noopener noreferrer">マルエー營業時間 ↗</a></p>
       <p><strong>交通：</strong>從金澤站西口步行免車票。</p>
       <p><a class="small-link" href="https://ore-sc.jp/crossgate-kanazawa/" target="_blank" rel="noopener noreferrer">樓層與店家 ↗</a></p>
     </article>
     <article class="side-card">
       <h3>近江町市場／尾張町</h3>
       <p>11/19 上午可改看<strong>金澤蓄音器館</strong>，中午去有遮棚的<strong>近江町市場</strong>。兩處之間有一段戶外步行。</p>
+      <p>11/19 若改走雨天路線，可在午餐後約 13:10～13:40 步行到市場對面的<strong>金澤エムザ B1 食品樓層</strong>（10:00～19:30），逛熟食、麵包和在地食品。想逛一般超市，可同時段擇一改去 <strong>マルエー彦三店</strong>（09:30～22:30），需走戶外。兩處從市場步行免車票。</p>
+      <p class="supermarket-links"><a class="small-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E9%87%91%E6%B2%A2%E3%82%A8%E3%83%A0%E3%82%B6" target="_blank" rel="noopener noreferrer">金澤エムザ 地圖 ↗</a> <a class="small-link" href="https://www.kmza.jp/mz_cat/cat01/" target="_blank" rel="noopener noreferrer">食品樓層店家 ↗</a> <a class="small-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%9E%E3%83%AB%E3%82%A8%E3%83%BC%E5%BD%A6%E4%B8%89%E5%BA%97%20%E9%87%91%E6%B2%A2" target="_blank" rel="noopener noreferrer">マルエー彦三店 地圖 ↗</a> <a class="small-link" href="https://s-marue.co.jp/store/hikoso/" target="_blank" rel="noopener noreferrer">マルエー彦三店營業時間 ↗</a></p>
       <p>如果午餐後風雨仍大，可以先回飯店休息，傍晚再出發赴 18:00 飛天龍晚餐。</p>
       <p><strong>交通：</strong>市場到蓄音器館步行免車票。若搭北鐵周遊巴士或計程車，須另付費。</p>
       <p><a class="small-link" href="https://kanazawa-museum.jp/chikuonki/index.html" target="_blank" rel="noopener noreferrer">蓄音器館開館與試聽資訊 ↗</a></p>
@@ -347,7 +353,8 @@ const base=[
  ev("hitenryu",2,"18:00","19:35","焼肉 飛天龍｜新神田本店","18:00 已訂｜新神田4丁目14-15","food","fixed","🥩","石川県金沢市新神田4丁目14番15号。從石浦神社／廣坂地區建議搭計程車約 15～25 分（估計，視路況），多人可能需分 2 台。公車備案：金澤站東口 11 號乘車處搭 11、56 系統至「新神田」，再步行 3 分，詳見餐廳官方交通頁。","hitenryu","https://hitenryu.jp/pages/about.html"),
  ev("ret19",2,"19:35","20:05","晚餐後返回飯店","搭計程車最省事（彈性）","transit","optional","🚕","飛天龍在新神田，結束後可搭計程車約 10～20 分回飯店（估計）。若選公車，從「新神田」搭往金澤站方向、再從西口步行約 4 分回飯店；晚間應核對末班班次。","hotel"),
  ev("uniqlo20",3,"10:00","12:00","UNIQLO 感謝祭","金澤 FORUS 4F｜完整兩小時","shop","draft","🛍️","從飯店走到金澤站、穿過站內至東口，FORUS 4 樓 UNIQLO 約步行 8～12 分。預留兩小時慢慢逛，不需另跑金澤市區其他店。","forus","https://www.forus.co.jp/kanazawa/"),
- ev("lunch20",3,"12:00","13:00","午餐","車站附近｜待決定","food","open","🍱","UNIQLO 感謝祭後在金澤站附近用午餐，避免為了餐廳跨區往返。下午確定都留在金澤，13:00 後出發去城郭區。","kanazawa"),
+ ev("lunch20",3,"12:00","13:00","午餐","車站附近｜待決定","food","open","🍱","UNIQLO 感謝祭後在金澤站附近用午餐，避免為了餐廳跨區往返。吃完午餐後到金澤站內的超市採買，再依天氣決定午後動線。","kanazawa"),
+ ev("supermarket20",3,"13:00","14:00","逛超市｜100banマート","金澤站內・百番街 あんと西 2F","shop","draft","🛒","UNIQLO 與午餐後步行到金澤站，往西口一側的百番街「あんと西」2 樓。超市 09:00～20:30，適合補飲料、零食和熟食；站內步行免車票。","100banマート 金沢百番街 あんと西","https://www.100bangai.co.jp/assets/pdf/businesshours_241101.pdf"),
  ev("dinner20",3,"19:00","20:00","晚餐待安排","餐廳未訂位，依當天行程決定","food","open","🍽️","11/20 晚餐保留空白。可以選擇市區或金澤站附近的餐廳；用餐時間不必配合美術館。唐吉訶德可放在晚餐後或視情況取消。","kanazawa"),
  ev("donki20",3,"20:15","21:30","MEGA 唐吉訶德","西泉 MEGA 店，可直接取消","shop","optional","🛍️","MEGA ドン・キホーテ ラパーク金沢店 位在西泉4-11，不在金澤站附近。若仍有體力，晚餐後搭計程車前往，採購約 60～75 分鐘；回飯店仍需交通。疲勞時不安排。","donki"),
  ev("checkout21",4,"08:15","08:50","飯店退房／前往巴士站","金澤站西口 ③ 乘車處","transit","draft","🧳","飯店退房後步行約 4 分到金澤站西口；小松空港巴士位於西口 ③ 號站牌。建議 09:00 前到站，先核對行李、巴士班次與付款方式。","hotel"),
@@ -357,14 +364,14 @@ const base=[
 ];
 const candidates={
  kanazawa:{tag:'推薦',name:'金澤城與城下町',desc:'金澤城、尾山神社、長町；下午保留休息。',note:'全天只在金澤。城郭與古街受天氣影響，雨大時可提早結束；不安排美術館。',items:[
- ev("castle20transit",3,"13:00","13:30","金澤站 → 金澤城","東口7號周遊巴士 → 兼六園下・金沢城","transit","draft","🚌","從金澤站東口 7 號站牌搭右回り（RL）周遊巴士，於「兼六園下・金沢城」下車後步行進金澤城。含候車及步行暫估 30 分鐘。","castle","https://www.hokutetsu.co.jp/tourism-bus/castle-town"),
- ev("castle20",3,"13:30","15:20","金澤城・玉泉院丸庭園","預留約 110 分鐘，欣賞城郭與庭園","spot","draft","🏯","從石川門附近進城，慢慢看石牆、城郭建築與玉泉院丸庭園。雨天請留意戶外石階濕滑，參觀內容可依當日開放調整。離園後往西側尾山神社方向走。","castle"),
- ev("oyama20",3,"15:35","16:05","尾山神社","金澤城西側步行約 5～10 分","spot","optional","⛩️","金澤城西側步行至尾山神社，欣賞融合和洋風格的彩色玻璃神門。大雨或疲勞時可以略過。","oyama"),
- ev("nagamachi20",3,"16:20","17:10","長町武家屋敷跡","從尾山神社步行約 10～15 分","spot","optional","🏘️","從尾山神社走往長町，欣賞土牆、石板巷與傳統街景。預留 50 分鐘而非走馬看花；雨大可縮短。","nagamachi"),
- ev("free20",3,"17:10","18:45","自由休息・下午茶","可在香林坊休息，或返回飯店","rest","open","☕","取消 21 世紀美術館後，這段時間不再補塞景點。找咖啡館休息、逛香林坊周邊，或直接搭公車／計程車回飯店。","nagamachi")
+ ev("castle20transit",3,"14:00","14:30","金澤站 → 金澤城","東口7號周遊巴士 → 兼六園下・金沢城","transit","draft","🚌","從金澤站東口 7 號站牌搭右回り（RL）周遊巴士，於「兼六園下・金沢城」下車後步行進金澤城。含候車及步行暫估 30 分鐘。","castle","https://www.hokutetsu.co.jp/tourism-bus/castle-town"),
+ ev("castle20",3,"14:30","16:00","金澤城・玉泉院丸庭園","預留約 90 分鐘，欣賞城郭與庭園","spot","draft","🏯","從石川門附近進城，慢慢看石牆、城郭建築與玉泉院丸庭園。雨天請留意戶外石階濕滑，參觀內容可依當日開放調整。離園後往西側尾山神社方向走。","castle"),
+ ev("oyama20",3,"16:15","16:40","尾山神社","金澤城西側步行約 5～10 分","spot","optional","⛩️","金澤城西側步行至尾山神社，欣賞融合和洋風格的彩色玻璃神門。大雨或疲勞時可以略過。","oyama"),
+ ev("nagamachi20",3,"16:55","17:35","長町武家屋敷跡","從尾山神社步行約 10～15 分","spot","optional","🏘️","從尾山神社走往長町，欣賞土牆、石板巷與傳統街景。可留約 40 分鐘；雨大可縮短。","nagamachi"),
+ ev("free20",3,"17:35","18:45","自由休息・下午茶","可在香林坊休息，或返回飯店","rest","open","☕","取消 21 世紀美術館後，這段時間不再補塞景點。找咖啡館休息、逛香林坊周邊，或直接搭公車／計程車回飯店。","nagamachi")
  ]},
  rain:{tag:'雨天備案',name:'購物與休息',desc:'車站商場、咖啡與飯店休息。',note:'遇到持續大雨，取消戶外景點，留在金澤站周邊購物休息；不安排美術館。',items:[
- ev("rain20shop",3,"13:00","15:15","金澤站周邊室內購物","百番街・FORUS 其他樓層","shop","optional","🛍️","午後雨大時取消城郭與長町戶外散步，留在金澤站百番街或 FORUS 逛選物、雜貨及伴手禮。上午 UNIQLO 感謝祭不變，這段不必勉強買東西。","forus"),
+ ev("rain20shop",3,"14:00","15:15","金澤站周邊室內購物","百番街・FORUS 其他樓層","shop","optional","🛍️","午後雨大時取消城郭與長町戶外散步，留在金澤站百番街或 FORUS 逛選物、雜貨及伴手禮。上午 UNIQLO 感謝祭不變，這段不必勉強買東西。","forus"),
  ev("rain20rest",3,"15:15","18:45","飯店休息／自由活動","雨天完全不必勉強觀光","rest","open","☕","不用多跑一處新景點；午後可以回飯店休息，或依天氣在車站旁逛街喝咖啡。11/20 晚餐和唐吉訶德仍視體力安排。","hotel")
  ]}
 };
