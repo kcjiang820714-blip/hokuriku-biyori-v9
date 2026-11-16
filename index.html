@@ -84,7 +84,7 @@ header{height:76px;display:flex;align-items:center;justify-content:space-between
 <div class="notice"><span aria-hidden="true">✳</span><div><b>行程版本 V9｜2026.11.16</b>　11/17 抵達金澤先寄行李、吃壽司、14:00 後入住休息；東茶屋街改排 11/19 上午 9:30，配合店家 10:00 左右開門。11/20 確定留在金澤：UNIQLO 感謝祭、金澤城、尾山神社、長町武家屋敷及購物。已取消 21 世紀美術館，下午保留休息空檔。白川鄉巴士、三家晚餐訂位及返台交通不變。<strong>除已訂位項目，其他時段均為規劃估計。</strong></div></div>
 <div class="views">
   <div class="section-intro"><div class="kicker">TRAVEL PLANNER</div><h2 id="section-title">每日行程</h2><p id="section-desc">按日期查看詳細動線、交通提醒及 Google Maps 導航。</p></div>
-  <nav class="segmented" aria-label="切換檢視"><button data-view="daily" class="on" aria-pressed="true">每日行程</button><button data-view="calendar" aria-pressed="false">週行事曆</button><button data-view="places" aria-pressed="false">景點候選</button><button data-view="transport" aria-pressed="false">交通攻略</button></nav>
+  <nav class="segmented" aria-label="切換檢視"><button data-view="daily" class="on" aria-pressed="true">每日行程</button><button data-view="calendar" aria-pressed="false">週行事曆</button><button data-view="places" aria-pressed="false">景點候選</button><button data-view="transport" aria-pressed="false">交通攻略</button><button data-view="rain" aria-pressed="false">雨天備案</button></nav>
 </div>
 <main>
 <section id="panel-daily" class="panel">
@@ -119,9 +119,52 @@ header{height:76px;display:flex;align-items:center;justify-content:space-between
 
 <section id="panel-transport" class="panel" hidden>
   <div class="day-heading"><span class="eyebrow">DOOR-TO-DOOR TRANSPORT GUIDE</span><h2>每個地點，怎麼去？</h2><p>由上一站到下一站的步行、站牌、車種與轉乘說明，附 Google Maps 路線查詢及官方來源。<b>確認過的班次</b>會標示；估計步行與尚未選定的車次不會假裝是訂票資訊。</p></div>
-  <div class="transport-tips"><div><b>JR Pass</b><span>11/17～11/20 四日使用；北陸新幹線適用區間的普通車自由席可搭乘。</span></div><div><b>金澤巴士</b><span>周遊巴士東口 7 號、成人 ¥220；小松空港巴士不含在 JR Pass。</span></div><div><b>11/18 必注意</b><span>去程 08:25 新高岡④ → 10:20 白川鄉；16:00 回程 → 17:55 新高岡，不是金澤。</span></div></div>
+  <div class="transport-tips"><div><b>JR Pass</b><span>北陸地區鐵路周遊券限 11/17～11/20；金澤 ↔ 新高岡普通車自由席可用。</span></div><div><b>金澤巴士</b><span>周遊巴士東口 7 號、成人 ¥220；小松空港巴士不含在 JR Pass。</span></div><div><b>11/18 必注意</b><span>去程 08:25 新高岡④ → 10:20 白川鄉；16:00 回程 → 17:55 新高岡，不是金澤。</span></div></div>
   <div class="transport-days" id="transport-days"></div>
   <p class="transport-foot">所列步行、車程為規劃估值；街道施工、班次停駛及候車都可能影響時間。Google Maps 交通路線會依開啟當下動態規劃，請將日期指定為實際旅行日以核對。</p>
+</section>
+<section id="panel-rain" class="panel" aria-label="按區域查找雨天備案" hidden>
+  <div class="day-heading">
+    <h2>按區域找室內備案</h2>
+    <p>11/19、11/20 留意北陸風雨。11/19 可留在近江町市場周邊，11/20 上午照原訂逛 UNIQLO，午後依雨勢選車站商場或博物館。</p>
+    <p><strong>JR Pass 交通提醒：</strong>11/17～11/20 可搭適用區間的 JR 鐵路及指定西日本 JR 巴士路線。北鐵周遊巴士、小松機場巴士、已訂白川鄉巴士及計程車皆不適用。11/21 已超出有效期間。<a class="small-link" href="https://www.westjr.co.jp/travel-information/en/tickets-passes/jrwest-rail-pass/hokuriku/" target="_blank" rel="noopener noreferrer">JR 西日本適用範圍 ↗</a></p>
+    <p><a class="small-link" href="https://tenki.jp/forecaster/domoto_yukiyo/2026/11/15/41328.html" target="_blank" rel="noopener noreferrer">日本氣象協會預報 ↗</a></p>
+  </div>
+  <div class="transport-cards">
+    <article class="side-card">
+      <h3>金澤車站東口</h3>
+      <p><strong>金澤百番街</strong>在站內，可吃飯、買伴手禮。站旁的<strong>金澤 FORUS</strong>可逛街、喝咖啡，6 樓有 11/17 午餐候選的もりもり寿し。</p>
+      <p>適合 11/17 入住前、11/20 購物後，或 11/21 搭機場巴士前有餘裕時。風雨大就留在站內。</p>
+      <p><strong>交通：</strong>站內及 FORUS 步行免車票。11/21 機場巴士另付費，JR Pass 已到期。</p>
+    </article>
+    <article class="side-card">
+      <h3>金澤車站西口</h3>
+      <p><strong>Cross Gate 金澤</strong> 1、2 樓有餐廳和咖啡店。適合從西口的飯店出發，或東口午餐候位太久時過來找座位。</p>
+      <p><strong>交通：</strong>從金澤站西口步行免車票。</p>
+      <p><a class="small-link" href="https://ore-sc.jp/crossgate-kanazawa/" target="_blank" rel="noopener noreferrer">樓層與店家 ↗</a></p>
+    </article>
+    <article class="side-card">
+      <h3>近江町市場／尾張町</h3>
+      <p>11/19 上午可改看<strong>金澤蓄音器館</strong>，中午去有遮棚的<strong>近江町市場</strong>。兩處之間有一段戶外步行。</p>
+      <p>如果午餐後風雨仍大，可以先回飯店休息，傍晚再出發赴 18:00 飛天龍晚餐。</p>
+      <p><strong>交通：</strong>市場到蓄音器館步行免車票。若搭北鐵周遊巴士或計程車，須另付費。</p>
+      <p><a class="small-link" href="https://kanazawa-museum.jp/chikuonki/index.html" target="_blank" rel="noopener noreferrer">蓄音器館開館與試聽資訊 ↗</a></p>
+    </article>
+    <article class="side-card">
+      <h3>兼六園周邊／出羽町</h3>
+      <p><strong>石川縣立歷史博物館</strong>可排在 11/19 或 11/20 下午，留 60～90 分鐘。09:00～17:00 開館，16:30 最後入館。</p>
+      <p>從近江町市場或車站跨區過去前，先看雨勢與交通；想縮短戶外步行可搭計程車。</p>
+      <p><strong>交通：</strong>北鐵市區巴士及計程車須另付費。若考慮搭西日本 JR 巴士，先核對是否為 Pass 適用路線。</p>
+      <p><a class="small-link" href="https://www.ishikawa-rekihaku.jp/info/index.html" target="_blank" rel="noopener noreferrer">博物館開館與交通資訊 ↗</a></p>
+    </article>
+    <article class="side-card">
+      <h3>白川鄉巴士站／荻町</h3>
+      <p>11/18 出發前先確認兩段已訂巴士都有行駛。到村後先看<strong>和田家</strong>，風雨可接受再走到<strong>明善寺鄉土館</strong>。明善寺距巴士站約步行 10 分鐘。</p>
+      <p>雨大就選和田家，午餐後提早回巴士站等 16:00 回程。若去程停駛，改走金澤車站區，晚上照原訂 19:30 Minoya。</p>
+      <p><strong>交通：</strong>金澤 ↔ 新高岡的北陸新幹線普通車自由席可用 JR Pass。兩段已訂世界遺產巴士另付費，村內步行免車票。</p>
+      <p><a class="small-link" href="https://www.vill.shirakawa.lg.jp/1609.htm" target="_blank" rel="noopener noreferrer">和田家 ↗</a> <a class="small-link" href="https://www.shirakawa-go.gr.jp/active/12/" target="_blank" rel="noopener noreferrer">明善寺鄉土館 ↗</a></p>
+    </article>
+  </div>
 </section>
 </main>
 <footer class="footer"><span>北陸日和 · HOKURIKU JOURNAL · V9 · 2026</span><span>離線可開啟 · 交通與營業資訊以現場／官網公告為準</span></footer>
@@ -367,7 +410,19 @@ function toast(text){let t=document.querySelector('#toast');t.textContent=text;t
 
 const journeyDest={0:['金澤初見・入住日','小松機場與金澤市區'],1:['白川鄉巴士日','轉乘前後請抓緩衝'],2:['金澤完整日','市區大部分以步行為主'],3:['金澤城與購物','已確定留在金澤；雨天可改室內慢遊'],4:['回台日','機場巴士 09:10 金澤站西口發']};
 function directionsUrl(l){return 'https://www.google.com/maps/dir/?api=1&origin='+encodeURIComponent(l.origin)+'&destination='+encodeURIComponent(l.dest)+'&travelmode='+(/步行/.test(l.mode)&&!/巴士|鐵道|新幹線|電車|市電/.test(l.mode)?'walking':/計程車/.test(l.mode)?'driving':'transit');}
-function cardTransport(l){return '<article class="transport-card"><span class="tag '+(l.fixed?'exact':'')+'">'+(l.fixed?'已核對班次／訂位':'路線與預估時間')+' · '+textHTML(l.mode)+'</span><h4>'+textHTML(l.title)+'</h4><div class="transport-endpoints"><span>'+textHTML(l.origin)+'</span><i>→</i><span>'+textHTML(l.dest)+'</span></div><p><b>預計：</b>'+textHTML(l.duration)+'</p><p>'+textHTML(l.how)+'</p>'+(l.remark?'<p class="important"><b>注意：</b>'+textHTML(l.remark)+'</p>':'')+'<div class="tlinks"><a class="small-link" href="'+directionsUrl(l)+'" target="_blank" rel="noopener noreferrer">Google Maps 路線 ↗</a>'+(l.source?'<a class="small-link" href="'+textHTML(l.source)+'" target="_blank" rel="noopener noreferrer">官方依據 ↗</a>':'')+'</div></article>';}
+function transitPassNote(l) {
+  if (l.mode === '步行' || l.mode === '步行優先') return '步行免車票';
+  if (l.mode === '北陸新幹線') return 'JR Pass 可用（普通車自由席）';
+  if (l.day === 4) return 'JR Pass 已到期，機場巴士另付費';
+  if (l.mode === '機場巴士' || l.mode === '世界遺產巴士' || l.mode.includes('周遊巴士')) {
+    return '這段巴士不適用 JR Pass，須另付費';
+  }
+  if (l.mode.includes('巴士') || l.mode.includes('公車')) {
+    return '北鐵巴士及計程車另付費。若搭西日本 JR 巴士，請確認是否為 Pass 適用路線';
+  }
+  return '計程車不適用 JR Pass，須另付費';
+}
+function cardTransport(l){return '<article class="transport-card"><span class="tag '+(l.fixed?'exact':'')+'">'+(l.fixed?'已核對班次／訂位':'路線與預估時間')+' · '+textHTML(l.mode)+'</span><h4>'+textHTML(l.title)+'</h4><div class="transport-endpoints"><span>'+textHTML(l.origin)+'</span><i>→</i><span>'+textHTML(l.dest)+'</span></div><p><b>預計：</b>'+textHTML(l.duration)+'</p><p>'+textHTML(l.how)+'</p><p><b>JR Pass：</b>'+textHTML(transitPassNote(l))+'</p>'+(l.remark?'<p class="important"><b>注意：</b>'+textHTML(l.remark)+'</p>':'')+'<div class="tlinks"><a class="small-link" href="'+directionsUrl(l)+'" target="_blank" rel="noopener noreferrer">Google Maps 路線 ↗</a>'+(l.source?'<a class="small-link" href="'+textHTML(l.source)+'" target="_blank" rel="noopener noreferrer">官方依據 ↗</a>':'')+'</div></article>';}
 function renderTransport(){let root=document.querySelector('#transport-days');root.innerHTML=days.map((d,i)=>'<section class="transport-group"><h3>DAY '+('0'+(i+1))+' · '+d.short+'｜'+journeyDest[i][0]+'</h3><p class="tiny" style="margin:0 0 10px;color:var(--muted)">'+journeyDest[i][1]+'</p><div class="transport-cards">'+transitLegs.filter(l=>l.day===i).map(cardTransport).join('')+'</div></section>').join('');}
 const eventTransportLinks={bus17:0,bag17:1,mori:2,hotel17:3,tea17:4,higashi:4,kazue:5,back:6,kairiki:7,depart18:8,shin:9,bus18go:10,shir1:11,shirfood:12,shir2:12,bus18back:13,shinback18:14,rest18:15,minoya:15,market19:16,castle19:17,kenroku19:18,shrine19:19,lunch19:20,museum19:20,ishiura19:21,buffer19:22,taxi19:22,hitenryu:22,ret19:23,uniqlo20:24,lunch20:25,donki20:32,checkout21:33,airportbus21:34,checkin21:35,flight21:35,toya0:26,toya1:26,toya2:27,toya3:27,fui0:28,fui1:28,fui2:29,waku0:30,waku1:30,waku2:31};
 function getLeg(e){return transitLegs[eventTransportLinks[e.id]]||null;}
@@ -380,7 +435,7 @@ function showModal(e){const m=document.querySelector('#modal');document.querySel
 function closeModal(){document.querySelector('#modal').hidden=true;document.body.style.overflow='';}
 function renderScenarios(){let g=document.querySelector('#scenario-grid');g.replaceChildren();Object.entries(candidates).forEach(([key,c])=>{let b=document.createElement('button');b.type='button';b.className='scenario'+(option===key?' on':'');b.setAttribute('aria-pressed',option===key?'true':'false');b.innerHTML='<span class="tag">'+c.tag+'</span><strong>'+c.name+'</strong><small>'+c.desc+'</small>';b.addEventListener('click',()=>{option=key;try{localStorage.setItem('hokuriku_v9_option',option)}catch(e){}renderScenarios();renderCalendar();renderDaily();toast('已切換 11/20 金澤版本')});g.appendChild(b)});document.querySelector('#scenario-note').textContent=candidates[option].note;}
 function renderWishlist(){document.querySelector('#wishlist').innerHTML=wish.map(w=>'<article class="wish"><div class="wish-top"><span class="wish-icon">'+w.icon+'</span><h3>'+textHTML(w.name)+'</h3></div><div class="area">'+textHTML(w.area)+'</div><p>'+textHTML(w.desc)+'</p><a href="'+Q(MAPS[w.place])+'" target="_blank" rel="noopener noreferrer">查看地圖 ↗</a></article>').join('')}
-function switchView(name){view=name;document.querySelectorAll('[data-view]').forEach(b=>{const active=b.dataset.view===name;b.classList.toggle('on',active);b.setAttribute('aria-pressed',active?'true':'false')});['daily','calendar','places','transport'].forEach(x=>document.querySelector('#panel-'+x).hidden=x!==name);const intro={daily:['每日行程','按日期查看詳細動線、交通提醒及 Google Maps 導航。'],calendar:['五日週行事曆','五天並排，依照日本時間軸查看所有行程的預留時段。'],places:['景點與備用方案','11/20 可直接切換方案預覽；未訂景點維持彈性。'],transport:['逐段交通攻略','含乘車站、路線、目的地、估算時間和官方連結；也可在每日行程展開查看。']}[name];document.querySelector('#section-title').textContent=intro[0];document.querySelector('#section-desc').textContent=intro[1];if(name==='calendar')renderCalendar();if(name==='transport')renderTransport();}
+function switchView(name){view=name;document.querySelectorAll('[data-view]').forEach(b=>{const active=b.dataset.view===name;b.classList.toggle('on',active);b.setAttribute('aria-pressed',active?'true':'false')});['daily','calendar','places','transport','rain'].forEach(x=>document.querySelector('#panel-'+x).hidden=x!==name);const intro={daily:['每日行程','按日期查看詳細動線、交通提醒及 Google Maps 導航。'],calendar:['五日週行事曆','五天並排，依照日本時間軸查看所有行程的預留時段。'],places:['景點與備用方案','11/20 可直接切換方案預覽；未訂景點維持彈性。'],rain:['雨天備案','依所在區域選擇室內活動，減少風雨中的移動。'],transport:['逐段交通攻略','含乘車站、路線、目的地、估算時間和官方連結；也可在每日行程展開查看。']}[name];document.querySelector('#section-title').textContent=intro[0];document.querySelector('#section-desc').textContent=intro[1];if(name==='calendar')renderCalendar();if(name==='transport')renderTransport();}
 function copySummary(){const lines=['北陸日和｜2026/11/17–11/21','住宿：スマイルホテル金沢西口駅前','（「已確定」才表示班機、巴士出發時間或餐廳預訂；其餘都是暫定）',''];days.forEach((d,i)=>{lines.push('【'+d.date+'】'+d.heading);itemsOf(i).forEach(e=>lines.push(e.start+' '+e.title+' ['+flagName[e.flag]+']'));lines.push('')});lines.push('交通必備：11/17先寄行李；11/18新高岡08:25→白川鄉10:20、白川鄉16:00→新高岡17:55；11/21金澤西口③09:10→機場09:55。');lines.push('11/20 金澤下午方案：'+candidates[option].name+'（景點時段可調整）');const txt=lines.join('\n');if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(txt).then(()=>toast('行程摘要已複製'),()=>fallback(txt))}else fallback(txt)}
 function fallback(text){let a=document.createElement('textarea');a.value=text;a.style.position='fixed';a.style.left='-99999px';document.body.appendChild(a);a.select();try{document.execCommand('copy');toast('行程摘要已複製')}catch(e){toast('無法自動複製，請手動選取文字')}a.remove()}
 document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>switchView(b.dataset.view)));
